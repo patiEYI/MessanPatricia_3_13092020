@@ -1,0 +1,132 @@
+$clr-primary: #9356DC;
+$clr-secondary: #FF79DA;
+$clr-tertiaire: #99E2D0;
+$btn-shadow-size: 0.55rem;
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    
+        header {
+            i {
+                display: block;
+                position: absolute;
+                top: 18px;
+                left: 30px;
+                color: gray;
+            }
+        }
+//image en haut de la page
+        .restaurant__img {
+            width: 100%;
+            position: absolute;
+            height: 400px;
+
+            img {
+                width: 100%;
+            }
+        }
+    
+    a{
+        text-decoration:none;
+        color:#000;
+    }
+//menu des pages
+    #menu {
+        padding-top: 30px;
+        background-color: #F1F2F3;
+        border-radius: 40px 40px 0 0;
+        opacity: 0.99;
+        margin-top: 170px;
+
+
+        .fa-heart-o {
+            display: block;
+            position: absolute;
+            right: 20px;
+            color: gray;
+            font-size: 1.7em;
+            margin-top: 5px;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-family: 'Shrikhand', cursive;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+
+        h3 {
+            font-size: 1em;
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+
+        .divider {
+            display: block;
+            position: absolute;
+            width: 10%;
+            border: solid 1px $clr-tertiaire;
+            margin-left: 10px;
+        }
+
+
+        ul {
+            margin: auto;
+            list-style-type: none;
+            padding: 10px;
+            margin-top: 10px;
+
+
+            li {
+                width: 100%;
+                padding-bottom: 10px;
+                background-color: #fff;
+                margin-bottom: 15px;
+                border-radius: 15px;
+
+                p {
+                    margin-left: 10px;
+                    font-size: 1em;
+                    font-weight: bold;
+                    padding-top: 10px;
+                    padding-bottom: 2px;
+                    font-style:normal;
+                }
+
+                small {
+                    margin-left: 10px;
+                }
+
+                div {
+                    position: absolute;
+                    right: 30px;
+                    padding-top: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+//button valider
+        .valider {
+            padding-bottom: 50px;
+            padding-top: 10px;
+
+            .btn {
+                display: block;
+                text-align: center;
+                margin: auto;
+                width: 60%;
+                padding: 15px;
+                border-radius: 55px;
+                color: #fff;
+                background-color: $clr-primary;
+                cursor: pointer;
+                border: none;
+            }
+        }
+    }
+}

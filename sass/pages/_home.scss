@@ -5,14 +5,13 @@ $clr-tertiaire: #99E2D0;
 $btn-shadow-size:0.55rem;
 
 //
-	* {
-		margin: 0;
-		padding: 0;
-	}
+* {
+	margin: 0;
+	padding: 0;
+}
 
 body {
-
-
+	font-family: 'Roboto', sans-serif;
 
 	.header {
 
@@ -25,40 +24,41 @@ body {
 	}
 	//acceuil
 	#accueil {
-		header {
-			height: 50px;
+
+
+
+		p {
+			height: 40px;
 			background-color: #C1C1C2;
+			padding-top: 15px;
+			text-align: center;
+			margin-top: 10px;
 
-			p {
-				padding-top: 15px;
-				text-align: center;
-				margin-top: 10px;
-
-				i {
-					margin-right: 15px
-				}
+			i {
+				margin-right: 15px
 			}
 		}
 
+
 		div {
 			background-color: #F1F2F3;
-			height: 320px;
+			padding-bottom: 50px;
 
 			h2 {
 				font-weight: bold;
-				font-size: 2.2em;
 				text-align: center;
 				padding-top: 20px;
+				padding-bottom: 20px;
+				
 			}
 
-			p {
+			em {
+				display: block;
 				text-align: center;
-				margin-top: 40px;
 				margin-bottom: 30px;
-				font-size: 1.2em
 			}
 
-			button {
+			.btn {
 				display: block;
 				text-align: center;
 				margin: auto;
@@ -72,15 +72,14 @@ body {
 			}
 		}
 	}
-	//nav
+	//nav second section
 	#nav {
-		height: 340px;
 		padding: 10px;
 
 		h2 {
-			font-size: 2.2em;
-			margin: 30px 0 30px 15px;
+			margin: 30px 0 15px 15px;
 			font-weight: bold;
+		
 		}
 
 		.nav {
@@ -97,10 +96,9 @@ body {
 					margin: 10px auto 20px auto;
 
 
-					span {
-						display: block;
+					div {
 						position: absolute;
-						left: 6px;
+						left: 12px;
 						border-radius: 50%;
 						background-color: #9356DC;
 						padding: 12px 10px;
@@ -110,30 +108,28 @@ body {
 					i {
 						display: block;
 						position: absolute;
-						left: 50px;
+						left: 60px;
 					}
 
 					p {
 						text-align: left;
 						margin-left: 50px;
+						font-size: 0.9em
 					}
 				}
 			}
 		}
 	}
-
+	//troisieme section
 	#restaurant {
 		background-color: #F1F2F3;
 		padding-bottom: 40px;
-		margin-top: 60px;
-
 
 		.restaurant__new {
 			display: block;
 			background-color: #99E2D0;
 			padding: 8px;
-			font-size: 1.2em;
-			width: 80px;
+			width: 70px;
 			height: 20px;
 			text-align: center;
 			border-radius: 5px;
@@ -143,10 +139,9 @@ body {
 		}
 
 		h2 {
-			font-size: 2.2em;
 			margin-left: 25px;
 			font-weight: bold;
-			padding-top: 70px;
+			padding-top: 40px;
 			margin-bottom: 10px;
 		}
 
@@ -154,6 +149,7 @@ body {
 			margin-bottom: 40px;
 
 			li {
+				margin-bottom: 25px;
 
 				img {
 					display: block;
@@ -171,18 +167,16 @@ body {
 					margin-right: auto;
 					margin-left: auto;
 					border-radius: 0 0 10px 10px;
-					padding-top: 20px;
 
-					p:first-child {
-						font-weight: bold;
-						font-family: Bahnschrift;
-						text-transform: uppercase;
-						padding-bottom: 8px;
-					}
 
 					p {
-						margin-left: 15px;
-						font-size: 1.2em
+						font-weight: bold;
+						text-transform: uppercase;
+						padding: 10px 0 0 5px;
+					}
+
+					small {
+						padding-left: 5px;
 					}
 
 					i {
@@ -190,7 +184,7 @@ body {
 						position: absolute;
 						right: 35px;
 						font-size: 1.7em;
-						margin-top: 5px;
+						margin-top: 15px;
 						color: #ECECEE;
 					}
 				}
