@@ -1,0 +1,183 @@
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 0 auto;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .header h1 {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 2em;
+}
+body #accueil header {
+  height: 50px;
+  background-color: #C1C1C2;
+}
+body #accueil header p {
+  padding-top: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+body #accueil header p i {
+  margin-right: 15px;
+}
+body #accueil div {
+  background-color: #F1F2F3;
+  height: 320px;
+}
+body #accueil div h2 {
+  font-weight: bold;
+  font-size: 2.2em;
+  text-align: center;
+  padding-top: 20px;
+}
+body #accueil div p {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+body #accueil div button {
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2em;
+  padding: 15px;
+  border-radius: 55px;
+  color: black;
+  background-color: #9356DC;
+  cursor: pointer;
+  border: none;
+}
+body #nav {
+  height: 340px;
+  padding: 10px;
+}
+body #nav h2 {
+  font-size: 2.2em;
+  margin: 30px 0 30px 15px;
+  font-weight: bold;
+}
+body #nav .nav {
+  padding-bottom: 40px;
+}
+body #nav .nav ul li {
+  list-style-type: none;
+  width: 80%;
+  padding: 20px;
+  background-color: #F1F2F3;
+  border-radius: 20px;
+  font-size: 1em;
+  margin: 10px auto 20px auto;
+}
+body #nav .nav ul li span {
+  display: block;
+  position: absolute;
+  left: 6px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 12px 10px;
+  line-height: 3px;
+}
+body #nav .nav ul li i {
+  display: block;
+  position: absolute;
+  left: 50px;
+}
+body #nav .nav ul li p {
+  text-align: left;
+  margin-left: 50px;
+}
+body #restaurant {
+  background-color: #F1F2F3;
+  padding-bottom: 40px;
+  margin-top: 60px;
+}
+body #restaurant .restaurant__new {
+  display: block;
+  background-color: #99E2D0;
+  padding: 8px;
+  font-size: 1.2em;
+  width: 80px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  right: 24px;
+  margin-top: 20px;
+}
+body #restaurant h2 {
+  font-size: 2.2em;
+  margin-left: 25px;
+  font-weight: bold;
+  padding-top: 70px;
+  margin-bottom: 10px;
+}
+body #restaurant ul {
+  margin-bottom: 40px;
+}
+body #restaurant ul li img {
+  display: block;
+  width: 90%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 0 0;
+}
+body #restaurant ul li div {
+  width: 90%;
+  height: 60px;
+  background-color: #FEFFFF;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0 0 10px 10px;
+  padding-top: 20px;
+}
+body #restaurant ul li div p:first-child {
+  font-weight: bold;
+  font-family: Bahnschrift;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+body #restaurant ul li div p {
+  margin-left: 15px;
+  font-size: 1.2em;
+}
+body #restaurant ul li div i {
+  display: block;
+  position: absolute;
+  right: 35px;
+  font-size: 1.7em;
+  margin-top: 5px;
+  color: #ECECEE;
+}
+body footer {
+  background-color: #2B2D30;
+  height: 190px;
+  padding: 18px;
+}
+body footer h1 {
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+  color: #E8E9EA;
+  padding-bottom: 20px;
+}
+body footer ul {
+  font-size: 1.2em;
+  color: #E8E9EA;
+  list-style-type: none;
+}
+body footer ul li {
+  padding-bottom: 10px;
+}
+body footer ul li i {
+  margin-right: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */

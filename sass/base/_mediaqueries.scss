@@ -1,0 +1,11 @@
+@mixin responsive($breakpoint){
+	@if $breakpoint == phone {
+		@media only screen and (min-width: 600px) { @content }
+	}
+}
+body {
+	@include responsive (phone) {
+		
+		margin: 0 auto;
+	}
+}
