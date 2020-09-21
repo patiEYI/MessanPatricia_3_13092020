@@ -18,32 +18,32 @@ body header .header {
   font-family: "Shrikhand", cursive;
   font-size: 2em;
 }
-body .accueil p {
+body .main p {
   height: 40px;
   background-color: #C1C1C2;
   padding-top: 15px;
   text-align: center;
   margin-top: 10px;
 }
-body .accueil p i {
+body .main p i {
   margin-right: 15px;
 }
-body .accueil div {
+body .main__heading {
   background-color: #F1F2F3;
   padding-bottom: 50px;
 }
-body .accueil div h2 {
+body .main__heading h2 {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-body .accueil div em {
+body .main__heading em {
   display: block;
   text-align: center;
   margin-bottom: 30px;
 }
-body .accueil div .btn {
+body .main__heading .btn {
   display: block;
   position: relative;
   text-align: center;
@@ -59,30 +59,34 @@ body .accueil div .btn {
   transform: scale(1);
   transition: transform 400ms, background-color 300ms 150ms ease-in-out;
 }
-body .accueil div .btn:hover {
+body .main__heading .btn:hover {
   transform: scale(1.15);
   background-color: white;
 }
-body .nav {
+body #nav {
   padding: 10px;
 }
-body .nav h2 {
+body #nav h2 {
   margin: 30px 0 15px 15px;
   font-weight: bold;
 }
-body .nav .nav {
-  padding-bottom: 40px;
+body #nav .nav {
+  padding-bottom: 0px;
 }
-body .nav .nav ul li {
+body #nav .nav ol {
+  padding: 10px;
+  background-color: #F1F2F3;
+}
+body #nav .nav ol .nav__link {
   list-style-type: none;
   width: 80%;
-  padding: 20px;
-  background-color: #F1F2F3;
+  padding: 15px;
   border-radius: 20px;
   font-size: 1em;
   margin: 10px auto 20px auto;
+  background-color: #Fff;
 }
-body .nav .nav ul li div {
+body #nav .nav ol .nav__link div {
   position: absolute;
   left: 12px;
   border-radius: 50%;
@@ -90,12 +94,12 @@ body .nav .nav ul li div {
   padding: 12px 10px;
   line-height: 3px;
 }
-body .nav .nav ul li i {
+body #nav .nav ol .nav__link i {
   display: block;
   position: absolute;
   left: 60px;
 }
-body .nav .nav ul li p {
+body #nav .nav ol .nav__link p {
   text-align: left;
   margin-left: 50px;
   font-size: 0.9em;
@@ -124,6 +128,7 @@ body #restaurant h2 {
 }
 body #restaurant ul {
   margin-bottom: 40px;
+  list-style-type: none;
 }
 body #restaurant ul li {
   margin-bottom: 25px;
@@ -205,14 +210,14 @@ body a {
   text-decoration: none;
   color: #000;
 }
-body section {
+body #menu {
   padding-top: 30px;
   background-color: #F1F2F3;
   border-radius: 40px 40px 0 0;
   opacity: 0.99;
   margin-top: 170px;
 }
-body section .fa-heart-o {
+body #menu .fa-heart-o {
   display: block;
   position: absolute;
   right: 20px;
@@ -220,33 +225,33 @@ body section .fa-heart-o {
   font-size: 1.7em;
   margin-top: 5px;
 }
-body section .heading1 {
+body #menu .heading1 {
   font-weight: bold;
   font-family: "Shrikhand", cursive;
   margin-bottom: 20px;
   padding-left: 10px;
 }
-body section .heading2 {
+body #menu .heading2 {
   font-size: 1em;
   margin-top: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
   color: gray;
 }
-body section .divider {
+body #menu .divider {
   display: block;
   position: absolute;
   width: 10%;
   border: solid 1px #99E2D0;
   margin-left: 10px;
 }
-body section .menu {
+body #menu .menu {
   margin: auto;
   list-style-type: none;
   padding: 10px;
   margin-top: 10px;
 }
-body section .menu__plat {
+body #menu .menu__plat {
   width: 100%;
   padding-bottom: 10px;
   background-color: #fff;
@@ -254,29 +259,29 @@ body section .menu__plat {
   border-radius: 15px;
   opacity: 1;
 }
-body section .menu__plat .menu__price {
+body #menu .menu__plat .menu__price {
   position: absolute;
   right: 30px;
   padding-top: 30px;
   font-weight: bold;
 }
-body section .menu__plat .menu__name {
+body #menu .menu__plat .menu__name {
   font-weight: bold;
   margin-left: 10px;
   font-size: 1em;
   padding-top: 10px;
   padding-bottom: 2px;
 }
-body section .menu__plat .menu__plus {
+body #menu .menu__plat .menu__plus {
   margin-left: 10px;
 }
-body section .menu__plat .menu__animation {
+body #menu .menu__plat .menu__animation {
   position: absolute;
   background-color: #99E2D0;
   width: 80px;
   opacity: 0.99;
 }
-body section .menu__plat .menu__animation .fa-check {
+body #menu .menu__plat .menu__animation .fa-check {
   position: absolute;
   right: 30px;
   color: #99E2D0;
@@ -285,11 +290,11 @@ body section .menu__plat .menu__animation .fa-check {
   text-align: center;
   padding: 3px 3px;
 }
-body section .menu .valider {
+body #menu .menu .valider {
   padding-bottom: 50px;
   padding-top: 10px;
 }
-body section .menu .valider .btn {
+body #menu .menu .valider .btn {
   display: block;
   text-align: center;
   margin: auto;
