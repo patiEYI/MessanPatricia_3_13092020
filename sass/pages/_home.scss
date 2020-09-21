@@ -2,7 +2,6 @@
 $clr-primary: #9356DC;
 $clr-secondary: #FF79DA;
 $clr-tertiaire: #99E2D0;
-$btn-shadow-size:0.55rem;
 
 //
 * {
@@ -11,7 +10,7 @@ $btn-shadow-size:0.55rem;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+
 
 	header {
 
@@ -58,25 +57,43 @@ body {
 				margin-bottom: 30px;
 			}
 
-			.btn {
+			.main__btn {
 				display: block;
 				position: relative;
 				text-align: center;
 				margin: auto;
 				font-size: 1.2em;
 				padding: 15px;
-				border-radius: 55px;
-				color: #000;
-				background-color: $clr-primary;
+				border-radius: 60px;
+				color: whitesmoke;
+				background-color: $clr-secondary;
 				cursor: pointer;
 				border: none;
+				box-shadow: 1px 1px 10px gray;
+				z-index: 1;
 				overflow: hidden;
 				transform: scale(1);
 				transition: transform 400ms,background-color 300ms 150ms ease-in-out;
 
 				&:hover {
 					transform: scale(1.15);
-					background-color: white;
+
+					& ::after {
+						opacity: 1;
+					}
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: darken($clr-primary, 1);
+					opacity: 0.50;
+					z-index: -1;
+					transition: opacity 250ms;
 				}
 			}
 		}
@@ -94,20 +111,42 @@ body {
 			padding-bottom: 0px;
 
 			ol {
-				padding:10px;
-				background-color: #F1F2F3;
+				padding: 10px;
+				background-color: #fff;
+				padding-bottom: 30px;
+
+				.nav__link--active {
+					animation: progress 1000ms 300ms both;
+					
+				}
+
+				.nav__link--change1 {
+					animation: progress 1000ms 500ms both;
+					
+				}
+
+				.nav__link--change2 {
+					animation: progress 1000ms 600ms both;
+					
+				}
 
 				.nav__link {
 					list-style-type: none;
 					width: 80%;
-					padding: 15px;
-					border-radius: 20px;
+					padding: 20px;
+					border-radius: 15px;
 					font-size: 1em;
 					margin: 10px auto 20px auto;
-					background-color: #Fff;
+					background-color: #F1F2F3;
+					box-shadow: 1px 1px 5px gray;
 
+
+					&:hover {
+						background-color: #D2C1DC;
+					}
 
 					div {
+						overflow: hidden;
 						position: absolute;
 						left: 12px;
 						border-radius: 50%;
@@ -117,15 +156,17 @@ body {
 					}
 
 					i {
+						overflow: hidden;
 						display: block;
 						position: absolute;
 						left: 60px;
 					}
 
 					p {
+						overflow: hidden;
 						text-align: left;
 						margin-left: 50px;
-						font-size: 0.9em
+						font-size: 0.9em;
 					}
 				}
 			}
@@ -232,4 +273,39 @@ body {
 		}
 	}
 }
+@keyframes progress{
+	0%{
+		
+		opacity:0;
+	}
+	26% {
+		opacity: 0;
+	}
+	36% {
+		opacity: 0;
+	}
+	46% {
+		opacity: 0;
+	}
+	56% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 0;
+	}
+	87% {
+		opacity: 0;
+	}
+	90% {
+		opacity: .1;
+	}
+   97% {
+		opacity: .30;
+	}
+	
 
+	100% {
+		
+		opacity: 1;
+	}
+}
