@@ -18,67 +18,54 @@ body {
     font-family: 'Shrikhand', cursive;
     font-size: 2em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000330}}
-  body .accueil p {
+  body #accueil p {
     height: 40px;
     background-color: #C1C1C2;
     padding-top: 15px;
     text-align: center;
     margin-top: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000338}}
-    body .accueil p i {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000337}}
+    body #accueil p i {
       margin-right: 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000344}}
-  body .accueil div {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000343}}
+  body #accueil div {
     background-color: #F1F2F3;
     padding-bottom: 50px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000348}}
-    body .accueil div h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000347}}
+    body #accueil div h2 {
       font-weight: bold;
       text-align: center;
       padding-top: 20px;
       padding-bottom: 20px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000355}}
-    body .accueil div em {
+    body #accueil div em {
       display: block;
       text-align: center;
       margin-bottom: 30px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000361}}
-    body .accueil div .btn {
+    body #accueil div .btn {
       display: block;
-      position: relative;
       text-align: center;
       margin: auto;
       font-size: 1.2em;
       padding: 15px;
       border-radius: 55px;
-      color: #000;
+      color: black;
       background-color: #9356DC;
       cursor: pointer;
-      border: none;
-      overflow: hidden;
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transition: background-color 300ms 150ms ease-in-out,-webkit-transform 400ms;
-      transition: background-color 300ms 150ms ease-in-out,-webkit-transform 400ms;
-      transition: transform 400ms,background-color 300ms 150ms ease-in-out;
-      transition: transform 400ms,background-color 300ms 150ms ease-in-out,-webkit-transform 400ms; }
+      border: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000376}}
-      body .accueil div .btn:hover {
-        -webkit-transform: scale(1.15);
-                transform: scale(1.15);
-        background-color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000384}}
-  body .nav {
+  body #nav {
     padding: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000387}}
-    body .nav h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000379}}
+    body #nav h2 {
       margin: 30px 0 15px 15px;
       font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000392}}
-    body .nav .nav {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000385}}
+    body #nav .nav {
       padding-bottom: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000396}}
-      body .nav .nav ul li {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000389}}
+      body #nav .nav ul li {
         list-style-type: none;
         width: 80%;
         padding: 20px;
@@ -86,29 +73,29 @@ body {
         border-radius: 20px;
         font-size: 1em;
         margin: 10px auto 20px auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003106}}
-        body .nav .nav ul li div {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\0000399}}
+        body #nav .nav ul li div {
           position: absolute;
           left: 12px;
           border-radius: 50%;
           background-color: #9356DC;
           padding: 12px 10px;
           line-height: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003115}}
-        body .nav .nav ul li i {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003108}}
+        body #nav .nav ul li i {
           display: block;
           position: absolute;
           left: 60px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003121}}
-        body .nav .nav ul li p {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003114}}
+        body #nav .nav ul li p {
           text-align: left;
           margin-left: 50px;
           font-size: 0.9em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003124}}
   body #restaurant {
     background-color: #F1F2F3;
     padding-bottom: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003128}}
     body #restaurant .restaurant__new {
       display: block;
       background-color: #99E2D0;
@@ -120,19 +107,19 @@ body {
       position: absolute;
       right: 24px;
       margin-top: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003141}}
     body #restaurant h2 {
       margin-left: 25px;
       font-weight: bold;
       padding-top: 40px;
       margin-bottom: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003148}}
     body #restaurant ul {
       margin-bottom: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003151}}
       body #restaurant ul li {
         margin-bottom: 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003154}}
         body #restaurant ul li img {
           display: block;
           width: 90%;
@@ -140,7 +127,7 @@ body {
           margin-left: auto;
           margin-right: auto;
           border-radius: 10px 10px 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003163}}
         body #restaurant ul li div {
           width: 90%;
           height: 60px;
@@ -148,15 +135,15 @@ body {
           margin-right: auto;
           margin-left: auto;
           border-radius: 0 0 10px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003172}}
           body #restaurant ul li div p {
             font-weight: bold;
             text-transform: uppercase;
             padding: 10px 0 0 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003178}}
           body #restaurant ul li div small {
             padding-left: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003182}}
           body #restaurant ul li div i {
             display: block;
             position: absolute;
@@ -164,26 +151,26 @@ body {
             font-size: 1.7em;
             margin-top: 15px;
             color: #ECECEE; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003195}}
   body footer {
     background-color: #2B2D30;
     height: 190px;
     padding: 18px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003200}}
     body footer h1 {
       font-weight: bold;
       font-family: 'Shrikhand', cursive;
       color: #E8E9EA;
       padding-bottom: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003207}}
     body footer ul {
       font-size: 1.2em;
       color: #E8E9EA;
       list-style-type: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003212}}
       body footer ul li {
         padding-bottom: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003223}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_home\.scss}line{font-family:\00003216}}
         body footer ul li i {
           margin-right: 12px; }
 
@@ -225,13 +212,13 @@ body {
       font-size: 1.7em;
       margin-top: 5px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\0000354}}
-    body .menu h1 {
+    body .menu h2 {
       font-weight: bold;
       font-family: 'Shrikhand', cursive;
       margin-bottom: 20px;
       padding-left: 10px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\0000362}}
-    body .menu h2 {
+    body .menu h3 {
       font-size: 1em;
       margin-top: 10px;
       padding-left: 10px;
@@ -256,33 +243,35 @@ body {
         background-color: #fff;
         margin-bottom: 15px;
         border-radius: 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\0000393}}
         body .menu ul li p {
           margin-left: 10px;
           font-size: 1em;
+          font-weight: bold;
           padding-top: 10px;
-          padding-bottom: 2px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003103}}
+          padding-bottom: 2px;
+          font-style: normal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003102}}
         body .menu ul li small {
           margin-left: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003106}}
         body .menu ul li div {
           position: absolute;
           right: 30px;
           padding-top: 30px;
           font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003117}}
         body .menu ul li span .sous-menu {
           display: block;
           position: absolute;
           right: 50px;
           width: 50px;
           color: #99E2D0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003128}}
     body .menu .valider {
       padding-bottom: 50px;
       padding-top: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/WIN10\/Desktop\/MessanPatricia_3_13092020\/sass\/pages\/_restaurant\.scss}line{font-family:\00003132}}
       body .menu .valider .btn {
         display: block;
         text-align: center;

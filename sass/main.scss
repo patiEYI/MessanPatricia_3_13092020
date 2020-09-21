@@ -1,5 +1,7 @@
-@import "./base/variables";
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/mediaqueries";
+
 @import "./pages/home";
 @import "./pages/restaurant";
 

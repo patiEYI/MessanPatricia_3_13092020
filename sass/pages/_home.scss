@@ -13,9 +13,9 @@ $btn-shadow-size:0.55rem;
 body {
 	font-family: 'Roboto', sans-serif;
 
-	.header {
+	header {
 
-		h1 {
+		.header {
 			font-weight: bold;
 			text-align: center;
 			font-family: 'Shrikhand', cursive;
@@ -23,7 +23,7 @@ body {
 		}
 	}
 	//acceuil
-	#accueil {
+	.accueil {
 
 
 
@@ -33,6 +33,7 @@ body {
 			padding-top: 15px;
 			text-align: center;
 			margin-top: 10px;
+
 
 			i {
 				margin-right: 15px
@@ -49,7 +50,6 @@ body {
 				text-align: center;
 				padding-top: 20px;
 				padding-bottom: 20px;
-				
 			}
 
 			em {
@@ -60,26 +60,33 @@ body {
 
 			.btn {
 				display: block;
+				position:relative;
 				text-align: center;
 				margin: auto;
 				font-size: 1.2em;
 				padding: 15px;
 				border-radius: 55px;
-				color: black;
+				color: #000;
 				background-color: $clr-primary;
 				cursor: pointer;
 				border: none;
+				overflow:hidden;
+				transform: scale(1);
+				transition: transform 400ms,background-color 300ms 150ms ease-in-out;
+				 &:hover {
+					transform: scale(1.15);
+					background-color:white;
+				}
 			}
 		}
 	}
 	//nav second section
-	#nav {
+	.nav {
 		padding: 10px;
 
 		h2 {
 			margin: 30px 0 15px 15px;
 			font-weight: bold;
-		
 		}
 
 		.nav {

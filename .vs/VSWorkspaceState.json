@@ -5,9 +5,10 @@
     "\\img",
     "\\sass",
     "\\sass\\base",
+    "\\sass\\layout",
     "\\sass\\pages",
     "\\sass\\utils"
   ],
-  "SelectedNode": "\\home.html",
+  "SelectedNode": "\\sass\\pages\\_restaurant.scss",
   "PreviewInSolutionExplorer": false
 }

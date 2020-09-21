@@ -1,40 +1,39 @@
 $clr-primary: #9356DC;
 $clr-secondary: #FF79DA;
 $clr-tertiaire: #99E2D0;
-$btn-shadow-size: 0.55rem;
 
 
 
 body {
     font-family: 'Roboto', sans-serif;
 
-    
-        header {
-            i {
-                display: block;
-                position: absolute;
-                top: 18px;
-                left: 30px;
-                color: gray;
-            }
-        }
-//image en haut de la page
-        .restaurant__img {
-            width: 100%;
-            position: absolute;
-            height: 400px;
 
-            img {
-                width: 100%;
-            }
+    header {
+        i {
+            display: block;
+            position: absolute;
+            top: 18px;
+            left: 30px;
+            color: gray;
         }
-    
-    a{
-        text-decoration:none;
-        color:#000;
     }
-//menu des pages
-    #menu {
+    //image en haut de la page
+    .restaurant__img {
+        width: 100%;
+        position: absolute;
+        height: 400px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    //menu des pages
+    section {
         padding-top: 30px;
         background-color: #F1F2F3;
         border-radius: 40px 40px 0 0;
@@ -51,7 +50,7 @@ body {
             margin-top: 5px;
         }
 
-        h2 {
+        .heading1 {
             font-weight: bold;
             font-family: 'Shrikhand', cursive;
             margin-bottom: 20px;
@@ -59,11 +58,12 @@ body {
         }
 
 
-        h3 {
+        .heading2 {
             font-size: 1em;
             margin-top: 10px;
             padding-left: 10px;
             padding-bottom: 5px;
+            color: gray;
         }
 
         .divider {
@@ -75,58 +75,77 @@ body {
         }
 
 
-        ul {
+
+        .menu {
             margin: auto;
             list-style-type: none;
             padding: 10px;
             margin-top: 10px;
 
-
-            li {
+            &__plat {
                 width: 100%;
                 padding-bottom: 10px;
                 background-color: #fff;
                 margin-bottom: 15px;
                 border-radius: 15px;
+                opacity:1;
 
-                p {
-                    margin-left: 10px;
-                    font-size: 1em;
-                    font-weight: bold;
-                    padding-top: 10px;
-                    padding-bottom: 2px;
-                    font-style:normal;
-                }
 
-                small {
-                    margin-left: 10px;
-                }
-
-                div {
+                .menu__price {
                     position: absolute;
                     right: 30px;
                     padding-top: 30px;
                     font-weight: bold;
                 }
-            }
-        }
-//button valider
-        .valider {
-            padding-bottom: 50px;
-            padding-top: 10px;
 
-            .btn {
-                display: block;
-                text-align: center;
-                margin: auto;
-                width: 60%;
-                padding: 15px;
-                border-radius: 55px;
-                color: #fff;
-                background-color: $clr-primary;
-                cursor: pointer;
-                border: none;
+                .menu__name {
+                    font-weight: bold;
+                    margin-left: 10px;
+                    font-size: 1em;
+                    padding-top: 10px;
+                    padding-bottom: 2px;
+                }
+
+                .menu__plus {
+                    margin-left: 10px;
+                }
+
+                .menu__animation {
+                    position:absolute;
+                    background-color:$clr-tertiaire;
+                    width:80px;
+                    opacity:0.99;
+
+                    .fa-check {
+                        position: absolute;
+                        right: 30px;
+                        color: $clr-tertiaire;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        text-align: center;
+                        padding: 3px 3px;
+                    }
+                }
+            }
+            //button valider
+            .valider {
+                padding-bottom: 50px;
+                padding-top: 10px;
+
+                .btn {
+                    display: block;
+                    text-align: center;
+                    margin: auto;
+                    width: 60%;
+                    padding: 15px;
+                    border-radius: 55px;
+                    color: #fff;
+                    background-color: $clr-primary;
+                    cursor: pointer;
+                    border: none;
+                }
             }
         }
     }
 }
+ 
