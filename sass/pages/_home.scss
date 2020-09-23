@@ -10,7 +10,7 @@ $clr-tertiaire: #99E2D0;
 }
 
 body {
-
+	
 
 	header {
 
@@ -26,12 +26,13 @@ body {
 
 
 
-		p {
+		&__lieu {
 			height: 40px;
-			background-color: #C1C1C2;
+			background: linear-gradient(#CFCECF, #eaeaea,#eaeaea,#eaeaea, #eaeaea, #eaeaea);
 			padding-top: 15px;
 			text-align: center;
 			margin-top: 10px;
+			font-weight: 500;
 
 
 			i {
@@ -41,59 +42,43 @@ body {
 
 
 		&__heading {
-			background-color: #F1F2F3;
+			background-color: #f6f6f6;
 			padding-bottom: 50px;
 
-			h2 {
-				font-weight: bold;
+			.main__heading1 {
+				font-weight: 600;
 				text-align: center;
 				padding-top: 20px;
 				padding-bottom: 20px;
 			}
 
-			em {
+			.main__heading2 {
 				display: block;
 				text-align: center;
 				margin-bottom: 30px;
+				font-weight: 300;
+				font-size: 1.2em;
 			}
 
 			.main__btn {
 				display: block;
+				background-image: linear-gradient( #FF79DA, #9356DC);
 				position: relative;
+				box-shadow: 5px 5px 6px 0px #c6c6c6;
 				text-align: center;
 				margin: auto;
 				font-size: 1.2em;
-				padding: 15px;
+				padding: 15px 35px;
 				border-radius: 60px;
-				color: whitesmoke;
-				background-color: $clr-secondary;
+				color: #fff;
+				background-size: 150%;
 				cursor: pointer;
 				border: none;
-				box-shadow: 1px 1px 10px gray;
-				z-index: 1;
-				overflow: hidden;
 				transform: scale(1);
 				transition: transform 400ms,background-color 300ms 150ms ease-in-out;
 
 				&:hover {
 					transform: scale(1.15);
-
-					& ::after {
-						opacity: 1;
-					}
-				}
-
-				&::after {
-					content: "";
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					background-color: darken($clr-primary, 1);
-					opacity: 0.50;
-					z-index: -1;
-					transition: opacity 250ms;
 				}
 			}
 		}
@@ -101,10 +86,11 @@ body {
 	//nav second section
 	#nav {
 		padding: 10px;
+		background-color: #FFF;
 
 		h2 {
 			margin: 30px 0 15px 15px;
-			font-weight: bold;
+			font-weight: 600;
 		}
 
 		.nav {
@@ -117,17 +103,14 @@ body {
 
 				.nav__link--active {
 					animation: progress 1000ms 300ms both;
-					
 				}
 
 				.nav__link--change1 {
 					animation: progress 1000ms 500ms both;
-					
 				}
 
 				.nav__link--change2 {
 					animation: progress 1000ms 600ms both;
-					
 				}
 
 				.nav__link {
@@ -137,29 +120,33 @@ body {
 					border-radius: 15px;
 					font-size: 1em;
 					margin: 10px auto 20px auto;
-					background-color: #F1F2F3;
-					box-shadow: 1px 1px 5px gray;
-
+					background-color: #f6f6f6;
+					box-shadow: 5px 5px 6px 0px #c6c6c6;
+					cursor: pointer;
 
 					&:hover {
-						background-color: #D2C1DC;
+						background-color: #f5edff;
 					}
 
 					div {
 						overflow: hidden;
 						position: absolute;
-						left: 12px;
+						left: 20px;
 						border-radius: 50%;
 						background-color: #9356DC;
 						padding: 12px 10px;
 						line-height: 3px;
+						color: #fff;
 					}
 
 					i {
 						overflow: hidden;
 						display: block;
 						position: absolute;
-						left: 60px;
+						left: 70px;
+						line-height: 18px;
+						color: $clr-primary;
+						font-size: 2em;
 					}
 
 					p {
@@ -167,6 +154,7 @@ body {
 						text-align: left;
 						margin-left: 50px;
 						font-size: 0.9em;
+						font-weight: 500;
 					}
 				}
 			}
@@ -174,7 +162,7 @@ body {
 	}
 	//troisieme section
 	#restaurant {
-		background-color: #F1F2F3;
+		background-color: #f6f6f6;
 		padding-bottom: 40px;
 
 		.restaurant__new {
@@ -232,13 +220,27 @@ body {
 						padding-left: 5px;
 					}
 
-					i {
+					.fa-heart-o {
 						display: block;
 						position: absolute;
 						right: 35px;
 						font-size: 1.7em;
 						margin-top: 15px;
-						color: #ECECEE;
+						color: #000;
+						cursor: pointer;
+
+						&:hover {
+							.fa-heart {
+								opacity: 1;
+							}
+						}
+
+						.fa-heart {
+							position: absolute;
+							right: 0px;
+							color: #d36bda;
+							opacity: 0;
+						}
 					}
 				}
 			}
@@ -250,17 +252,18 @@ body {
 		height: 190px;
 		padding: 18px;
 
-		h1 {
-			font-weight: bold;
+		.footer__heading {
+			font-size: 1.3em;
 			font-family: 'Shrikhand', cursive;
 			color: #E8E9EA;
 			padding-bottom: 20px;
 		}
 
-		ul {
+		.footer__list {
 			font-size: 1.2em;
 			color: #E8E9EA;
 			list-style-type: none;
+			font-weight: 500;
 
 			li {
 				padding-bottom: 10px;

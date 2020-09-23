@@ -7,8 +7,9 @@
     "\\sass\\base",
     "\\sass\\layout",
     "\\sass\\pages",
-    "\\sass\\utils"
+    "\\sass\\utils",
+    "\\stylesheets"
   ],
-  "SelectedNode": "\\sass\\pages\\_restaurant.scss",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }

@@ -15,73 +15,61 @@ body header .header {
   font-family: "Shrikhand", cursive;
   font-size: 2em;
 }
-body .main p {
+body .main__lieu {
   height: 40px;
-  background-color: #C1C1C2;
+  background: linear-gradient(#CFCECF, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea);
   padding-top: 15px;
   text-align: center;
   margin-top: 10px;
+  font-weight: 500;
 }
-body .main p i {
+body .main__lieu i {
   margin-right: 15px;
 }
 body .main__heading {
-  background-color: #F1F2F3;
+  background-color: #f6f6f6;
   padding-bottom: 50px;
 }
-body .main__heading h2 {
-  font-weight: bold;
+body .main__heading .main__heading1 {
+  font-weight: 600;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-body .main__heading em {
+body .main__heading .main__heading2 {
   display: block;
   text-align: center;
   margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 1.2em;
 }
 body .main__heading .main__btn {
   display: block;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   position: relative;
+  box-shadow: 5px 5px 6px 0px #c6c6c6;
   text-align: center;
   margin: auto;
   font-size: 1.2em;
-  padding: 15px;
+  padding: 15px 35px;
   border-radius: 60px;
-  color: whitesmoke;
-  background-color: #FF79DA;
+  color: #fff;
+  background-size: 150%;
   cursor: pointer;
   border: none;
-  box-shadow: 1px 1px 10px gray;
-  z-index: 1;
-  overflow: hidden;
   transform: scale(1);
   transition: transform 400ms, background-color 300ms 150ms ease-in-out;
 }
 body .main__heading .main__btn:hover {
   transform: scale(1.15);
 }
-body .main__heading .main__btn:hover ::after {
-  opacity: 1;
-}
-body .main__heading .main__btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #9052db;
-  opacity: 0.5;
-  z-index: -1;
-  transition: opacity 250ms;
-}
 body #nav {
   padding: 10px;
+  background-color: #FFF;
 }
 body #nav h2 {
   margin: 30px 0 15px 15px;
-  font-weight: bold;
+  font-weight: 600;
 }
 body #nav .nav {
   padding-bottom: 0px;
@@ -107,35 +95,41 @@ body #nav .nav ol .nav__link {
   border-radius: 15px;
   font-size: 1em;
   margin: 10px auto 20px auto;
-  background-color: #F1F2F3;
-  box-shadow: 1px 1px 5px gray;
+  background-color: #f6f6f6;
+  box-shadow: 5px 5px 6px 0px #c6c6c6;
+  cursor: pointer;
 }
 body #nav .nav ol .nav__link:hover {
-  background-color: #D2C1DC;
+  background-color: #f5edff;
 }
 body #nav .nav ol .nav__link div {
   overflow: hidden;
   position: absolute;
-  left: 12px;
+  left: 20px;
   border-radius: 50%;
   background-color: #9356DC;
   padding: 12px 10px;
   line-height: 3px;
+  color: #fff;
 }
 body #nav .nav ol .nav__link i {
   overflow: hidden;
   display: block;
   position: absolute;
-  left: 60px;
+  left: 70px;
+  line-height: 18px;
+  color: #9356DC;
+  font-size: 2em;
 }
 body #nav .nav ol .nav__link p {
   overflow: hidden;
   text-align: left;
   margin-left: 50px;
   font-size: 0.9em;
+  font-weight: 500;
 }
 body #restaurant {
-  background-color: #F1F2F3;
+  background-color: #f6f6f6;
   padding-bottom: 40px;
 }
 body #restaurant .restaurant__new {
@@ -187,34 +181,45 @@ body #restaurant ul li div p {
 body #restaurant ul li div small {
   padding-left: 5px;
 }
-body #restaurant ul li div i {
+body #restaurant ul li div .fa-heart-o {
   display: block;
   position: absolute;
   right: 35px;
   font-size: 1.7em;
   margin-top: 15px;
-  color: #ECECEE;
+  color: #000;
+  cursor: pointer;
+}
+body #restaurant ul li div .fa-heart-o:hover .fa-heart {
+  opacity: 1;
+}
+body #restaurant ul li div .fa-heart-o .fa-heart {
+  position: absolute;
+  right: 0px;
+  color: #d36bda;
+  opacity: 0;
 }
 body footer {
   background-color: #2B2D30;
   height: 190px;
   padding: 18px;
 }
-body footer h1 {
-  font-weight: bold;
+body footer .footer__heading {
+  font-size: 1.3em;
   font-family: "Shrikhand", cursive;
   color: #E8E9EA;
   padding-bottom: 20px;
 }
-body footer ul {
+body footer .footer__list {
   font-size: 1.2em;
   color: #E8E9EA;
   list-style-type: none;
+  font-weight: 500;
 }
-body footer ul li {
+body footer .footer__list li {
   padding-bottom: 10px;
 }
-body footer ul li i {
+body footer .footer__list li i {
   margin-right: 12px;
 }
 
@@ -253,12 +258,14 @@ body footer ul li i {
 body {
   font-family: "Roboto", sans-serif;
 }
-body header i {
+body header .fa-arrow-left {
   display: block;
   position: absolute;
-  top: 18px;
+  top: 14px;
   left: 30px;
-  color: gray;
+  color: #625454;
+  font-size: 1.2em;
+  font-weight: 100;
 }
 body .restaurant__img {
   width: 100%;
@@ -274,31 +281,43 @@ body a {
 }
 body #menu {
   padding-top: 30px;
-  background-color: #F1F2F3;
+  background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   opacity: 0.99;
   margin-top: 170px;
 }
-body #menu .fa-heart-o {
+body #menu .menu__icon .fa-heart-o {
   display: block;
   position: absolute;
   right: 20px;
-  color: gray;
+  color: #000;
   font-size: 1.7em;
   margin-top: 5px;
+  cursor: pointer;
+}
+body #menu .menu__icon .fa-heart-o:hover .fa-heart {
+  opacity: 1;
+}
+body #menu .menu__icon .fa-heart-o .fa-heart {
+  position: absolute;
+  right: 0px;
+  color: #d36bda;
+  opacity: 0;
 }
 body #menu .heading1 {
-  font-weight: bold;
+  font-weight: 300;
   font-family: "Shrikhand", cursive;
   margin-bottom: 20px;
   padding-left: 10px;
+  font-size: 1.6em;
 }
 body #menu .heading2 {
   font-size: 1em;
   margin-top: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
-  color: gray;
+  color: dimgray;
+  font-weight: 400;
 }
 body #menu .divider {
   display: block;
@@ -313,78 +332,91 @@ body #menu .menu {
   padding: 10px;
   margin-top: 10px;
 }
-body #menu .menu .menu__plat1 {
+body #menu .menu .menu__plat--1 {
   animation: progress 800ms 250ms both;
 }
-body #menu .menu .menu__plat2 {
+body #menu .menu .menu__plat--2 {
   animation: progress 800ms 450ms both;
 }
-body #menu .menu .menu__plat3 {
+body #menu .menu .menu__plat--3 {
   animation: progress 800ms 550ms both;
 }
-body #menu .menu .menu__plat4 {
+body #menu .menu .menu__plat--4 {
   animation: progress 800ms 700ms both;
 }
 body #menu .menu__plat {
   width: 100%;
   padding-bottom: 10px;
-  background-color: #fff;
+  background-color: #FFF;
   margin-bottom: 15px;
   border-radius: 15px;
-  box-shadow: 1px 1px 6px gray;
+  box-shadow: 5px 5px 6px 0px #c6c6c6;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
 }
 body #menu .menu__plat:hover {
-  background-color: #D2C1DC;
+  background-color: #f5edff;
 }
-body #menu .menu__plat:hover + .menu__animation {
-  opacity: 0;
+body #menu .menu__plat:hover .menu__animation {
+  transform: translateX(-90px);
+  opacity: 1;
 }
-body #menu .menu__plat:hover + .menu__animation .fa-check {
+body #menu .menu__plat:hover .menu__animation .fa-check {
+  transform: rotate(360deg);
+  opacity: 1;
+}
+body #menu .menu__plat:hover .menu__price {
+  transform: translateX(-35px);
+}
+body #menu .menu__plat .menu__animation {
   opacity: 0;
+  position: absolute;
+  right: -90px;
+  background-color: #99E2D0;
+  width: 60px;
+  height: 65px;
+  z-index: 1;
+  white-space: nowrap;
+  border-radius: 0 15px 15px 0;
+  transform-origin: left;
+  transform: translateX(0);
+  transition: transform 800ms 150ms ease-in-out;
+}
+body #menu .menu__plat .menu__animation .fa-check {
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  color: #99E2D0;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 3px 3px;
+  margin-top: 24px;
+  z-index: 1;
+  opacity: 0;
+  transform: rotate(0);
+  transition: transform 800ms 250ms ease-in-out;
 }
 body #menu .menu__plat .menu__price {
   position: absolute;
   right: 30px;
   padding-top: 30px;
   font-weight: bold;
+  transform: translateX(0);
+  transition: transform 800ms 200ms ease-in-out;
 }
 body #menu .menu__plat .menu__name {
-  font-weight: 900;
+  font-weight: 500;
   margin-left: 10px;
-  font-size: 1em;
   padding-top: 10px;
   padding-bottom: 5px;
-  font-size: 1.2em;
-  letter-spacing: 1px;
+  font-size: 1.1em;
 }
 body #menu .menu__plat .menu__plus {
   margin-left: 10px;
-  color: #646365;
-  font-weight: 600;
+  color: #050505;
+  font-weight: 400;
   font-size: 1em;
-}
-body #menu .menu .menu__animation {
-  opacity: 0;
-  position: absolute;
-  right: -80px;
-  background-color: #99E2D0;
-  width: 80px;
-  height: 60px;
-  white-space: nowrap;
-  border-radius: 0 20px 20px 0;
-  transition: transform 400ms ease-in-out;
-}
-body #menu .menu .menu__animation .fa-check {
-  overflow: hidden;
-  position: absolute;
-  right: 30px;
-  color: #99E2D0;
-  border-radius: 50%;
-  background-color: #fff;
-  text-align: center;
-  padding: 3px 3px;
-  margin-top: 20px;
-  opacity: 0;
 }
 body #menu .valider {
   padding-bottom: 50px;
@@ -398,11 +430,11 @@ body #menu .valider .valider__btn {
   padding: 15px;
   border-radius: 55px;
   color: #fff;
-  background-color: #FF79DA;
   cursor: pointer;
   border: none;
-  box-shadow: 1px 1px 10px gray;
+  box-shadow: 5px 5px 6px 0px #c6c6c6;
   z-index: 1;
+  background: linear-gradient(#FF79DA, #9356DC);
   position: relative;
   overflow: hidden;
   transform: scale(1);
@@ -411,27 +443,34 @@ body #menu .valider .valider__btn {
 body #menu .valider .valider__btn:hover {
   transform: scale(1.15);
 }
-body #menu .valider .valider__btn:hover ::after {
-  opacity: 1;
-}
-body #menu .valider .valider__btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #9052db;
-  opacity: 0.5;
-  z-index: -1;
-  transition: opacity 250ms;
-}
 
 @keyframes progress {
   0% {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+@keyframes progress1 {
+  0% {
+    transform: translateX(-5px);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(-15px);
+  }
+  30% {
+    transform: translateX(-35px);
+  }
+  60% {
+    transform: translateX(-55px);
+  }
+  80% {
+    transform: translateX(-65px);
+  }
+  100% {
+    transform: translateX(-80px);
     opacity: 1;
   }
 }

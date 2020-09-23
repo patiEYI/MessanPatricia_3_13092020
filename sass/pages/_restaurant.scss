@@ -9,12 +9,14 @@ body {
 
 
     header {
-        i {
+        .fa-arrow-left {
             display: block;
             position: absolute;
-            top: 18px;
+            top: 14px;
             left: 30px;
-            color: gray;
+            color: #625454;
+            font-size: 1.2em;
+            font-weight: 100;
         }
     }
     //image en haut de la page
@@ -35,26 +37,43 @@ body {
     //menu des pages
     #menu {
         padding-top: 30px;
-        background-color: #F1F2F3;
+        background-color: #f6f6f6;
         border-radius: 40px 40px 0 0;
         opacity: 0.99;
         margin-top: 170px;
 
+        .menu__icon {
+            .fa-heart-o {
+                display: block;
+                position: absolute;
+                right: 20px;
+                color: #000;
+                font-size: 1.7em;
+                margin-top: 5px;
+                cursor: pointer;
 
-        .fa-heart-o {
-            display: block;
-            position: absolute;
-            right: 20px;
-            color: gray;
-            font-size: 1.7em;
-            margin-top: 5px;
+                &:hover {
+                    .fa-heart {
+                        opacity: 1;
+                    }
+                }
+
+                .fa-heart {
+                    position: absolute;
+                    right: 0px;
+                    color: #d36bda;
+                    opacity: 0;
+                }
+            }
         }
 
+
         .heading1 {
-            font-weight: bold;
+            font-weight: 300;
             font-family: 'Shrikhand', cursive;
             margin-bottom: 20px;
             padding-left: 10px;
+            font-size: 1.6em;
         }
 
 
@@ -63,7 +82,8 @@ body {
             margin-top: 10px;
             padding-left: 10px;
             padding-bottom: 5px;
-            color: gray;
+            color: dimgray;
+            font-weight: 400;
         }
 
         .divider {
@@ -82,19 +102,19 @@ body {
             padding: 10px;
             margin-top: 10px;
 
-            .menu__plat1 {
+            .menu__plat--1 {
                 animation: progress 800ms 250ms both;
             }
 
-            .menu__plat2 {
+            .menu__plat--2 {
                 animation: progress 800ms 450ms both;
             }
 
-            .menu__plat3 {
+            .menu__plat--3 {
                 animation: progress 800ms 550ms both;
             }
 
-            .menu__plat4 {
+            .menu__plat--4 {
                 animation: progress 800ms 700ms both;
             }
 
@@ -103,20 +123,60 @@ body {
             &__plat {
                 width: 100%;
                 padding-bottom: 10px;
-                background-color: #fff;
+                background-color: #FFF;
                 margin-bottom: 15px;
                 border-radius: 15px;
-                box-shadow: 1px 1px 6px gray;
+                box-shadow: 5px 5px 6px 0px #c6c6c6;
+                z-index: 1;
+                position: relative;
+                cursor: pointer;
 
                 &:hover {
-                    background-color: #D2C1DC;
+                    background-color: #f5edff;
 
-                    & + .menu__animation {
-                        opacity: 0;
+                    & .menu__animation {
+                        transform: translateX(-90px);
+                        opacity: 1;
 
                         .fa-check {
-                            opacity: 0;
+                            transform: rotate(360deg);
+                            opacity: 1;
                         }
+                    }
+
+                    & .menu__price {
+                        transform: translateX(-35px);
+                    }
+                }
+
+                .menu__animation {
+                    opacity: 0;
+                    position: absolute;
+                    right: -90px;
+                    background-color: $clr-tertiaire;
+                    width: 60px;
+                    height: 65px;
+                    z-index: 1;
+                    white-space: nowrap;
+                    border-radius: 0 15px 15px 0;
+                    transform-origin: left;
+                    transform: translateX(0);
+                    transition: transform 800ms 150ms ease-in-out;
+
+
+                    .fa-check {
+                        overflow: hidden;
+                        position: absolute;
+                        right: 20px;
+                        color: $clr-tertiaire;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        padding: 3px 3px;
+                        margin-top: 24px;
+                        z-index: 1;
+                        opacity: 0;
+                        transform: rotate(0);
+                        transition: transform 800ms 250ms ease-in-out;
                     }
                 }
 
@@ -125,49 +185,23 @@ body {
                     right: 30px;
                     padding-top: 30px;
                     font-weight: bold;
+                    transform: translateX(0);
+                    transition: transform 800ms 200ms ease-in-out;
                 }
 
                 .menu__name {
-                    font-weight: 900;
+                    font-weight: 500;
                     margin-left: 10px;
-                    font-size: 1em;
                     padding-top: 10px;
                     padding-bottom: 5px;
-                    font-size: 1.2em;
-                    letter-spacing: 1px;
+                    font-size: 1.1em;
                 }
 
                 .menu__plus {
                     margin-left: 10px;
-                    color: #646365;
-                    font-weight: 600;
+                    color: #050505;
+                    font-weight: 400;
                     font-size: 1em;
-                }
-            }
-
-            .menu__animation {
-                opacity: 0;
-                position: absolute;
-                right: -80px;
-                background-color: $clr-tertiaire;
-                width: 80px;
-                height: 60px;
-                white-space: nowrap;
-                border-radius: 0 20px 20px 0;
-                transition: transform 400ms ease-in-out;
-
-
-                .fa-check {
-                    overflow: hidden;
-                    position: absolute;
-                    right: 30px;
-                    color: $clr-tertiaire;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    text-align: center;
-                    padding: 3px 3px;
-                    margin-top: 20px;
-                    opacity: 0;
                 }
             }
         }
@@ -184,11 +218,11 @@ body {
                 padding: 15px;
                 border-radius: 55px;
                 color: #fff;
-                background-color: $clr-secondary;
                 cursor: pointer;
                 border: none;
-                box-shadow: 1px 1px 10px gray;
+                box-shadow: 5px 5px 6px 0px #c6c6c6;
                 z-index: 1;
+                background: linear-gradient(#FF79DA, #9356DC);
                 position: relative;
                 overflow: hidden;
                 transform: scale(1);
@@ -196,23 +230,6 @@ body {
 
                 &:hover {
                     transform: scale(1.15);
-
-                    & ::after {
-                        opacity: 1;
-                    }
-                }
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    background-color: darken($clr-primary, 1);
-                    opacity: 0.50;
-                    z-index: -1;
-                    transition: opacity 250ms;
                 }
             }
         }
@@ -225,6 +242,32 @@ body {
 
 
     100% {
+        opacity: 1;
+    }
+}
+@keyframes progress1 {
+    0% {
+        transform:translateX(-5px);
+        opacity: 1;
+    }
+    10% {
+        transform: translateX(-15px);
+        
+    }
+    30% {
+        transform: translateX(-35px);
+        
+    }
+    60% {
+        transform: translateX(-55px);
+       
+    }
+    80% {
+        transform: translateX(-65px);       
+    }
+
+    100% {
+        transform: translateX(-80px);
         opacity: 1;
     }
 } 

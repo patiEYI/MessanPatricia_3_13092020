@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand" rel="stylesheet">
     <script src="https://use.fontawesome.com/1c244cce6f.js"></script>
     <title>ohmyfood</title>
@@ -31,7 +31,7 @@
 
     <section id="menu">
 
-        <div><i class="fa fa-heart-o fa"></i></div>
+        <div class="menu__icon"><i class=" fa-heart-o fa"><i class="fa-heart fa"></i></i></div>
         <h2 class="heading1">Bastille</h2>
 
 
@@ -39,29 +39,31 @@
         <h3 class="heading2">ENTREES </h3>
         <div><span class="divider"></span></div>
         <ul class="menu">
-            <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
+
             <!--plat-->
-            <li class="menu__plat menu__plat1">
+            <li class="menu__plat menu__plat--1">
+                <!--animation-->
+                <div class="menu__animation"><i class="fa fa-check fa"></i></div>
                 <div class="menu__price">25€</div>
                 <p class="menu__name"><strong>Citrus Squid Carpaccio</strong></p>
                 <small class="menu__plus">With orange zest</small>
             </li>
-            <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
             <!--plat-->
-            <li class="menu__plat menu__plat2">
+            <li class="menu__plat menu__plat--2">
+                <!--animation-->
+                <div class="menu__animation"><i class="fa fa-check fa"></i></div>
                 <div class="menu__price">35€</div>
                 <p class="menu__name">Grandmother's Vegetable Soup</p>
                 <small class="menu__plus">Carrot,parsnips,Jerusalem artichoke</small>
             </li>
             <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
             <!--plat-->
-            <li class=" menu__plat menu__plat3">
+            <li class=" menu__plat menu__plat--3">
+                <div class="menu__animation"><i class="fa fa-check fa"></i></div>
                 <div class="menu__price">20€</div>
                 <p class="menu__name">Onion Soup</p>
                 <small class="menu__plus">Revisted</small>
+
             </li>
         </ul>
         <!--repas-->
@@ -69,26 +71,28 @@
         <div><span class="divider"></span></div>
 
         <ul class="menu">
-            <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
             <!--plat-->
-            <li class="menu__plat menu__plat1">
+            <li class="menu__plat menu__plat--1">
+                <!--animation-->
+                <div class="menu__animation"><i class="fa fa-check fa"></i></div>
                 <div class="menu__price">25€</div>
                 <p class="menu__name">Scallops</p>
                 <small class="menu__plus">With mashed parsnip</small>
             </li>
-            <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
+
             <!--plat-->
-            <li class="menu__plat menu__plat2">
-                <div class="menu__price">35€</div>
-                <p class="menu__name">Grandmother's Vegetable Soup</p>
-                <small class="menu__plus">Carrot,parsnips,Jerusalem artichoke</small>
+            <li class="menu__plat menu__plat--2">
+                <!--animation-->
+            <div class="menu__animation"><i class="fa fa-check fa"></i></div>
+            <div class="menu__price">35€</div>
+            <p class="menu__name">Grandmother's Vegetable Soup</p>
+            <small class="menu__plus">Carrot,parsnips,Jerusalem artichoke</small>
             </li>
-            <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
+     
             <!--plat-->
-            <li class="menu__plat menu__plat3">
+            <li class="menu__plat menu__plat--3">
+                <!--animation-->
+                <div class="menu__animation"><i class="fa fa-check fa"></i></div>
                 <div class="menu__price">20€</div>
                 <p class="menu__name">Onion Soup</p>
                 <small class="menu__plus">Revisted</small>
@@ -98,26 +102,28 @@
         <h3 class="heading2">Desserts</h3>
         <div><span class="divider"></span></div>
         <ul class="menu">
-            <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
             <!--plat-->
-            <li class="menu__plat menu__plat1">
+            <li class="menu__plat menu__plat--1">
+                <!--animation-->
+                <div class="menu__animation"><i class="fa fa-check fa"></i></div>
                 <div class="menu__price">25€</div>
                 <p class="menu__name">Floral Ice Cream</p>
                 <small class="menu__plus">With hazelnut butter</small>
             </li>
-            <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
+     
             <!--plat-->
-            <li class="menu__plat menu__plat2">
+            <li class="menu__plat menu__plat--2">
+                <!--animation-->
+                <div class="menu__animation"><i class="fa fa-check fa"></i></div>
                 <div class="menu__price">35€</div>
                 <p class="menu__name">hocolate Lava Cake</p>
                 <small class="menu__plus">Revisited</small>
             </li>
-            <!--animation-->
-            <li class="menu__animation"><i class="fa fa-check fa"></i></li>
+      
             <!--plat-->
-            <li class="menu__plat menu__plat3">
+            <li class="menu__plat menu__plat--3">
+                <!--animation-->
+                <div class="menu__animation"><i class="fa fa-check fa"></i></div>
                 <div class="menu__price">20€</div>
                 <p class="menu__name">Napolean</p>
                 <small class="menu__plus">with blueberries and marzipan</small>
@@ -128,8 +134,8 @@
     </section>
     <!--Footer-->
     <footer>
-        <h1>ohmyfood</h1>
-        <ul>
+        <h1 class="footer__heading">ohmyfood</h1>
+        <ul class="footer__list">
             <li><i class="fa fa-cutlery fa"> </i>Suggest a restaurant</li>
             <li><i class="fa fa-handshake-o fa"> </i>Become a patner</li>
 

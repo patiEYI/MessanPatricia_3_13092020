@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand" rel="stylesheet">
     <script src="https://use.fontawesome.com/1c244cce6f.js"></script>
 
@@ -21,11 +21,11 @@
         <!--section1-->
         <section class="main">
             
-                <p><i class="fa fa-map-marker fa"></i>Paris,Belleville</p>
+                <p class="main__lieu"><i class="fa fa-map-marker fa"></i>Paris, Belleville</p>
             
             <div class="main__heading">
-                <h2>Book the menu you like</h2>
-                <em>Discover top-of-the-art restaurants we <br />picked for you</em>
+                <h2 class="main__heading1">Book the menu you like</h2>
+                <p class="main__heading2">Discover top-of-the-art restaurants we <br />picked for you</p>
                 
                 <button class="main__btn">Explore your restaurants 
                    </button></div>
@@ -38,9 +38,9 @@
             <h2>How it works</h2>
             <nav class="nav">
                 <ol>
-                    <li class="nav__link nav__link--active"><div>1</div><i class="fa fa-phone"></i><p>Choose a restaurant</p> </li>
-                    <li class="nav__link nav__link--change1 "><div>2</div> <i class="fa fa-phone"></i><p>Create your menu</p>  </li>
-                    <li class="nav__link nav__link--change2"><div>3</div><i class="fa fa-phone"></i><p>Go enjoy it at the restaurant</p> </li>
+                    <li class="nav__link nav__link--active"><div>1</div><i class="fas fa-mobile fa "></i><p>Choose a restaurant</p> </li>
+                    <li class="nav__link nav__link--change1 "><div>2</div> <i class="fas fa-bars fa"></i><p>Create your menu</p>  </li>
+                    <li class="nav__link nav__link--change2"><div>3</div> <i class="fas fa-bars fa "></i><p>Go enjoy it at the restaurant</p> </li>
                 </ol>
 
             </nav>
@@ -56,7 +56,7 @@
                 <span class="restaurant__new">New</span>
                 <a href="palette.html"> <img src="img/palette.jpg" alt="photo restaurant" /></a>
                 <div>
-                    <i class="fa fa-heart-o fa"></i>
+                    <i class="fa fa-heart-o fa"><i class="fa fa-heart"></i></i>
                     <a href="palette.html"><p>The Full Palette</p></a>
                     <small>New York </small>
 
@@ -67,9 +67,9 @@
                 <span class="restaurant__new">New</span>
                 <a  href="note.html"><img src="img/note.jpg" alt="photo restaurant" /></a>
                 <div>
-                    <i class="fa fa-heart-o fa"></i>
-                    <a href="note.html"><p>The Enchanted Plate</p></a>
-                    <small>New York</small>
+                    <i class="fa fa-heart-o fa"><i class="fa fa-heart"></i></i>
+                    <a href="note.html"><p class="restaurant__name">The Enchanted Plate</p></a>
+                    <small restaurant__lieu>New York</small>
 
                 </div>
             </li>
@@ -78,7 +78,7 @@
                 
                 <a href="francaise.html"><img src="img/francaise.jpg" alt="photo restaurant" /></a> 
                 <div>
-                    <i class="fa fa-heart-o fa"></i>
+                    <i class="fa fa-heart-o fa"><i class="fa fa-heart"></i></i>
                     <a href="francaise.html"><p>Bastille</p></a>
                     <small>New York</small>
 
@@ -89,7 +89,7 @@
                
                 <a href="delice.html"><img src="img/delice.jpg" alt="photo restaurant" /></a> 
                 <div>
-                    <i class="fa fa-heart-o fa"></i>
+                    <i class="fa fa-heart-o fa"><i class="fa fa-heart"></i></i>
                     <a href="delice.html"><p>Le Gourmand</p></a>
                     <small>New York</small>
 
@@ -98,9 +98,9 @@
                 </ul>
         </section>
         <!--footer-->
-        <footer class="container">
-            <h1>ohmyfood</h1>
-            <ul>
+        <footer>
+            <h1 class="footer__heading">ohmyfood</h1>
+            <ul class="footer__list">
                 <li><i class="fa fa-cutlery fa"> </i>Suggest a restaurant</li>
                 <li><i class="fa fa-handshake-o fa"> </i>Become a patner</li>
            
