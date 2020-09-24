@@ -1,6 +1,24 @@
 @mixin responsive($breakpoint) {
 	@if $breakpoint == phone {
-		@media only screen and (min-width: 600px) {
+		@media only screen and (min-width: 425px) {
+			@content
+		}
+	}
+
+	@if $breakpoint == tab-port {
+		@media only screen and (min-width: 768px) {
+			@content
+		}
+	}
+
+	@if $breakpoint == tab-land {
+		@media only screen and (min-width: 1024px) {
+			@content
+		}
+	}
+
+	@if $breakpoint == desktop-big {
+		@media only screen and (min-width: 1440px) {
 			@content
 		}
 	}
@@ -9,5 +27,22 @@
 body {
 	@include responsive (phone) {
 		margin: 0 auto;
+		
+	}
+
+	@include responsive (tab-port) {
+		margin: 0 auto;
+		font-size: 1.5em;
+	}
+
+	@include responsive (tab-land) {
+		margin: 0 auto;
+		font-size: 1.6em;
+	}
+
+	@include responsive (desktop-big) {
+		margin: 0 auto;
+		font-size: 1.6em;
 	}
 }
+

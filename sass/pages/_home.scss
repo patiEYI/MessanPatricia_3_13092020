@@ -2,6 +2,31 @@
 $clr-primary: #9356DC;
 $clr-secondary: #FF79DA;
 $clr-tertiaire: #99E2D0;
+@mixin responsive($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (min-width: 425px) {
+			@content
+		}
+	}
+
+	@if $breakpoint == tab-port {
+		@media only screen and (min-width: 768px) {
+			@content
+		}
+	}
+
+	@if $breakpoint == tab-land {
+		@media only screen and (min-width: 1024px) {
+			@content
+		}
+	}
+
+	@if $breakpoint == desktop-big {
+		@media screen and (min-width: 1440px) {
+			@content
+		}
+	}
+}
 
 //
 * {
@@ -10,7 +35,10 @@ $clr-tertiaire: #99E2D0;
 }
 
 body {
-	
+
+	@include responsive (tab-port) {
+		width: 90%;
+	}
 
 	header {
 
@@ -23,8 +51,6 @@ body {
 	}
 	//main
 	.main {
-
-
 
 		&__lieu {
 			height: 40px;
@@ -88,9 +114,19 @@ body {
 		padding: 10px;
 		background-color: #FFF;
 
+
+
 		h2 {
 			margin: 30px 0 15px 15px;
 			font-weight: 600;
+
+			@include responsive (tab-port) {
+				margin-left: 65px;
+			}
+
+			@include responsive (desktop-big) {
+				margin-left: 130px;
+			}
 		}
 
 		.nav {
@@ -131,63 +167,123 @@ body {
 					div {
 						overflow: hidden;
 						position: absolute;
-						left: 20px;
+						left: 25px;
 						border-radius: 50%;
 						background-color: #9356DC;
-						padding: 12px 10px;
-						line-height: 3px;
+						padding: 12px 8px;
+						line-height: 0px;
 						color: #fff;
+
+						@include responsive (tab-port) {
+							left: 90px;
+							line-height: 4px;
+						}
+
+						@include responsive (tab-land) {
+							left: 130px;
+						}
+
+						@include responsive (desktop-big) {
+							left: 180px;
+							font-size: 1.5em;
+							padding: 18px 12px;
+							line-height: 8px;
+						}
 					}
 
 					i {
 						overflow: hidden;
 						display: block;
 						position: absolute;
-						left: 70px;
+						left: 65px;
 						line-height: 18px;
 						color: $clr-primary;
-						font-size: 2em;
+						font-size: 1em;
+
+						@include responsive (tab-port) {
+							left: 180px;
+							font-size: 1.5em;
+						}
+
+						@include responsive (desktop-big) {
+							left: 300px;
+						}
 					}
 
 					p {
 						overflow: hidden;
 						text-align: left;
 						margin-left: 50px;
-						font-size: 0.9em;
+						font-size: 0.8em;
 						font-weight: 500;
+
+						@include responsive (tab-port) {
+							margin-left: 120px;
+						}
+
+						@include responsive (desktop-big) {
+							font-size: 1.2em;
+							margin-left: 160px;
+						}
 					}
 				}
 			}
 		}
 	}
 	//troisieme section
-	#restaurant {
+	main {
 		background-color: #f6f6f6;
 		padding-bottom: 40px;
-
-		.restaurant__new {
-			display: block;
-			background-color: #99E2D0;
-			padding: 8px;
-			width: 70px;
-			height: 20px;
-			text-align: center;
-			border-radius: 5px;
-			position: absolute;
-			right: 24px;
-			margin-top: 20px;
-		}
 
 		h2 {
 			margin-left: 25px;
 			font-weight: bold;
 			padding-top: 40px;
 			margin-bottom: 10px;
+
+			@include responsive (tab-port) {
+				margin-left: 45px;
+			}
+		}
+
+		.restaurant1 {
+			@include responsive (desktop-big) {
+				display: flex;
+				justify-content: space-evenly;
+			}
 		}
 
 		ul {
 			margin-bottom: 40px;
 			list-style-type: none;
+
+			.restaurant__new--1 {
+				@include responsive (desktop-big) {
+					left: 595px;
+				}
+			}
+
+			.restaurant__new {
+				display: block;
+				background-color: #99E2D0;
+				padding: 8px;
+				width: 70px;
+				height: 20px;
+				text-align: center;
+				border-radius: 5px;
+				position: absolute;
+				right: 24px;
+				margin-top: 20px;
+
+				@include responsive (tab-port) {
+					right: 95px;
+					height: 30px;
+				}
+
+				@include responsive (desktop-big) {
+					right: 125px;
+				}
+			}
 
 			li {
 				margin-bottom: 25px;
@@ -199,6 +295,16 @@ body {
 					margin-left: auto;
 					margin-right: auto;
 					border-radius: 10px 10px 0 0;
+
+					@include responsive (tab-port) {
+						height: 400px;
+					}
+
+					@include responsive (desktop-big) {
+						width: 600px;
+						margin-left: 0;
+						margin-right: 0;
+					}
 				}
 
 				div {
@@ -209,6 +315,13 @@ body {
 					margin-left: auto;
 					border-radius: 0 0 10px 10px;
 
+					@include responsive (tab-port) {
+						height: 80px;
+					}
+
+					@include responsive (desktop-big) {
+						width: 100%;
+					}
 
 					p {
 						font-weight: bold;
@@ -220,6 +333,20 @@ body {
 						padding-left: 5px;
 					}
 
+					.fa-heart-o--bis {
+						@include responsive (desktop-big) {
+							left: 610px;
+						}
+
+						.fa-heart--bis {
+							@include responsive (desktop-big) {
+								left: 0px;
+							}
+						}
+					}
+
+
+
 					.fa-heart-o {
 						display: block;
 						position: absolute;
@@ -228,6 +355,14 @@ body {
 						margin-top: 15px;
 						color: #000;
 						cursor: pointer;
+
+						@include responsive (tab-port) {
+							right: 110px;
+						}
+
+						@include responsive (desktop-big) {
+							right: 130px;
+						}
 
 						&:hover {
 							.fa-heart {
@@ -251,6 +386,10 @@ body {
 		background-color: #2B2D30;
 		height: 190px;
 		padding: 18px;
+
+		@include responsive (tab-port) {
+			height: 250px;
+		}
 
 		.footer__heading {
 			font-size: 1.3em;
