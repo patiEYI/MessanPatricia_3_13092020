@@ -3,6 +3,12 @@ $clr-primary: #9356DC;
 $clr-secondary: #FF79DA;
 $clr-tertiaire: #99E2D0;
 @mixin responsive($breakpoint) {
+	@if $breakpoint == phoneX {
+		@media only screen and (min-width: 320px) {
+			@content
+		}
+	}
+
 	@if $breakpoint == phone {
 		@media only screen and (min-width: 425px) {
 			@content
@@ -26,6 +32,12 @@ $clr-tertiaire: #99E2D0;
 			@content
 		}
 	}
+
+	@if $breakpoint == desktop-big-plus {
+		@media screen and (min-width: 2560px) {
+			@content
+		}
+	}
 }
 
 //
@@ -35,381 +47,519 @@ $clr-tertiaire: #99E2D0;
 }
 
 body {
+	.wrapper {
+		margin: 0 auto;
 
-	@include responsive (tab-port) {
-		width: 90%;
-	}
-
-	header {
-
-		.header {
-			font-weight: bold;
-			text-align: center;
-			font-family: 'Shrikhand', cursive;
-			font-size: 2em;
-		}
-	}
-	//main
-	.main {
-
-		&__lieu {
-			height: 40px;
-			background: linear-gradient(#CFCECF, #eaeaea,#eaeaea,#eaeaea, #eaeaea, #eaeaea);
-			padding-top: 15px;
-			text-align: center;
-			margin-top: 10px;
-			font-weight: 500;
-
-
-			i {
-				margin-right: 15px
-			}
+		@include responsive (tab-port) {
+			width: 70%;
+			font-size:1em;
 		}
 
-
-		&__heading {
-			background-color: #f6f6f6;
-			padding-bottom: 50px;
-
-			.main__heading1 {
-				font-weight: 600;
-				text-align: center;
-				padding-top: 20px;
-				padding-bottom: 20px;
-			}
-
-			.main__heading2 {
-				display: block;
-				text-align: center;
-				margin-bottom: 30px;
-				font-weight: 300;
-				font-size: 1.2em;
-			}
-
-			.main__btn {
-				display: block;
-				background-image: linear-gradient( #FF79DA, #9356DC);
-				position: relative;
-				box-shadow: 5px 5px 6px 0px #c6c6c6;
-				text-align: center;
-				margin: auto;
-				font-size: 1.2em;
-				padding: 15px 35px;
-				border-radius: 60px;
-				color: #fff;
-				background-size: 150%;
-				cursor: pointer;
-				border: none;
-				transform: scale(1);
-				transition: transform 400ms,background-color 300ms 150ms ease-in-out;
-
-				&:hover {
-					transform: scale(1.15);
-				}
-			}
+		@include responsive (tab-land) {
+			width: 60%;
 		}
-	}
-	//nav second section
-	#nav {
-		padding: 10px;
-		background-color: #FFF;
 
+		@include responsive (desktop-big) {
+			width: 80%;
+		}
 
+		@include responsive (desktop-big-plus) {
+			width: 60%;
+		}
 
-		h2 {
-			margin: 30px 0 15px 15px;
-			font-weight: 600;
+		header {
 
-			@include responsive (tab-port) {
-				margin-left: 65px;
+			.header {
+				font-weight: bold;
+				text-align: center;
+				font-family: 'Shrikhand', cursive;
+				font-size: 2em;
 			}
 
 			@include responsive (desktop-big) {
-				margin-left: 130px;
+				font-size: 1.5em;
 			}
 		}
+		//main
+		.main {
 
-		.nav {
-			padding-bottom: 0px;
+			&__lieu {
+				height: 4vh;
+				background: linear-gradient(#CFCECF, #eaeaea,#eaeaea,#eaeaea, #eaeaea, #eaeaea);
+				text-align: center;
+				justify-content: center;
+				font-weight: 400;
+				padding-top: 4%;
 
-			ol {
-				padding: 10px;
-				background-color: #fff;
-				padding-bottom: 30px;
-
-				.nav__link--active {
-					animation: progress 1000ms 300ms both;
+				@include responsive (tab-port) {
+					padding-bottom: 3%;
 				}
 
-				.nav__link--change1 {
-					animation: progress 1000ms 500ms both;
+				@include responsive (desktop-big) {
+					font-size: 1.6em;
 				}
 
-				.nav__link--change2 {
-					animation: progress 1000ms 600ms both;
+				i {
+					margin-right: 2%;
+				}
+			}
+
+
+			&__heading {
+				background-color: #f6f6f6;
+				padding: 0 0 8vh 0;
+
+				@include responsive (desktop-big) {
+					font-size: 1.6em;
 				}
 
-				.nav__link {
-					list-style-type: none;
-					width: 80%;
-					padding: 20px;
-					border-radius: 15px;
+				.main__heading1 {
+					font-weight: 600;
+					text-align: center;
+					padding-top: 11%;
+					padding-bottom: 12%;
+					font-size: 1.3em;
+				}
+
+				.main__heading2 {
+					display: block;
+					text-align: center;
+					margin-bottom: 8%;
+					font-weight: 300;
 					font-size: 1em;
-					margin: 10px auto 20px auto;
-					background-color: #f6f6f6;
+				}
+
+				.main__btn {
+					display: block;
+					background-image: linear-gradient( #FF79DA, #9356DC);
+					position: relative;
 					box-shadow: 5px 5px 6px 0px #c6c6c6;
+					text-align: center;
+					margin: auto;
+					font-size: 0.9em;
+					padding: 5% 8%;
+					border-radius: 60px;
+					color: #fff;
 					cursor: pointer;
+					border: none;
+					transform: scale(1);
+					transition: transform 400ms,background-color 300ms 150ms ease-in-out;
+
+					@include responsive (tab-port) {
+						padding: 4% 7%;
+						margin-bottom: 12%;
+					}
+
+					@include responsive (desktop-big) {
+						font-size: 0.8em;
+						padding: 3% 5%;
+					}
 
 					&:hover {
+						transform: scale(1.10);
+					}
+				}
+			}
+		}
+		//nav second section
+		#nav {
+			padding: 10px;
+			background-color: #FFF;
+
+			@include responsive (tab-land) {
+				margin: 40px 0 80px 0;
+			}
+
+			h2 {
+				margin: 10% 0 0% 4%;
+				font-weight: 800;
+
+				@include responsive (desktop-big) {
+					font-size: 2em;
+				}
+			}
+
+			.nav {
+				padding-bottom: 0px;
+
+				@include responsive (tab-port) {
+					font-size: 1.2em;
+				}
+
+				ol {
+					background-color: #fff;
+					padding-bottom: 10%;
+					padding-top: 5%;
+
+
+					.nav__link--change {
+						animation: progress 1000ms 300ms both;
+					}
+
+					.nav__link--change1 {
+						animation: progress 1000ms 500ms both;
+					}
+
+					.nav__link--change2 {
+						animation: progress 1000ms 600ms both;
 						background-color: #f5edff;
 					}
 
-					div {
-						overflow: hidden;
-						position: absolute;
-						left: 25px;
-						border-radius: 50%;
-						background-color: #9356DC;
-						padding: 12px 8px;
-						line-height: 0px;
-						color: #fff;
-
-						@include responsive (tab-port) {
-							left: 90px;
-							line-height: 4px;
-						}
-
-						@include responsive (tab-land) {
-							left: 130px;
-						}
-
-						@include responsive (desktop-big) {
-							left: 180px;
-							font-size: 1.5em;
-							padding: 18px 12px;
-							line-height: 8px;
-						}
-					}
-
-					i {
-						overflow: hidden;
-						display: block;
-						position: absolute;
-						left: 65px;
-						line-height: 18px;
-						color: $clr-primary;
+					.nav__link {
+						list-style-type: none;
+						width: 80%;
+						padding: 6%;
+						border-radius: 20px;
 						font-size: 1em;
-
-						@include responsive (tab-port) {
-							left: 180px;
-							font-size: 1.5em;
-						}
-
-						@include responsive (desktop-big) {
-							left: 300px;
-						}
-					}
-
-					p {
-						overflow: hidden;
-						text-align: left;
-						margin-left: 50px;
-						font-size: 0.8em;
-						font-weight: 500;
-
-						@include responsive (tab-port) {
-							margin-left: 120px;
-						}
-
-						@include responsive (desktop-big) {
-							font-size: 1.2em;
-							margin-left: 160px;
-						}
-					}
-				}
-			}
-		}
-	}
-	//troisieme section
-	main {
-		background-color: #f6f6f6;
-		padding-bottom: 40px;
-
-		h2 {
-			margin-left: 25px;
-			font-weight: bold;
-			padding-top: 40px;
-			margin-bottom: 10px;
-
-			@include responsive (tab-port) {
-				margin-left: 45px;
-			}
-		}
-
-		.restaurant1 {
-			@include responsive (desktop-big) {
-				display: flex;
-				justify-content: space-evenly;
-			}
-		}
-
-		ul {
-			margin-bottom: 40px;
-			list-style-type: none;
-
-			.restaurant__new--1 {
-				@include responsive (desktop-big) {
-					left: 595px;
-				}
-			}
-
-			.restaurant__new {
-				display: block;
-				background-color: #99E2D0;
-				padding: 8px;
-				width: 70px;
-				height: 20px;
-				text-align: center;
-				border-radius: 5px;
-				position: absolute;
-				right: 24px;
-				margin-top: 20px;
-
-				@include responsive (tab-port) {
-					right: 95px;
-					height: 30px;
-				}
-
-				@include responsive (desktop-big) {
-					right: 125px;
-				}
-			}
-
-			li {
-				margin-bottom: 25px;
-
-				img {
-					display: block;
-					width: 90%;
-					height: 200px;
-					margin-left: auto;
-					margin-right: auto;
-					border-radius: 10px 10px 0 0;
-
-					@include responsive (tab-port) {
-						height: 400px;
-					}
-
-					@include responsive (desktop-big) {
-						width: 600px;
-						margin-left: 0;
-						margin-right: 0;
-					}
-				}
-
-				div {
-					width: 90%;
-					height: 60px;
-					background-color: #FEFFFF;
-					margin-right: auto;
-					margin-left: auto;
-					border-radius: 0 0 10px 10px;
-
-					@include responsive (tab-port) {
-						height: 80px;
-					}
-
-					@include responsive (desktop-big) {
-						width: 100%;
-					}
-
-					p {
-						font-weight: bold;
-						text-transform: uppercase;
-						padding: 10px 0 0 5px;
-					}
-
-					small {
-						padding-left: 5px;
-					}
-
-					.fa-heart-o--bis {
-						@include responsive (desktop-big) {
-							left: 610px;
-						}
-
-						.fa-heart--bis {
-							@include responsive (desktop-big) {
-								left: 0px;
-							}
-						}
-					}
-
-
-
-					.fa-heart-o {
-						display: block;
-						position: absolute;
-						right: 35px;
-						font-size: 1.7em;
-						margin-top: 15px;
-						color: #000;
+						margin: 5% auto 6% auto;
+						background-color: #f6f6f6;
+						box-shadow: 5px 5px 6px 0px #c6c6c6;
 						cursor: pointer;
 
-						@include responsive (tab-port) {
-							right: 110px;
-						}
-
 						@include responsive (desktop-big) {
-							right: 130px;
+							padding: 2%;
+							width: 85%;
 						}
 
 						&:hover {
-							.fa-heart {
-								opacity: 1;
+							background-color: #f5edff;
+						}
+
+						div {
+							overflow: hidden;
+							position: absolute;
+							left: 5%;
+							border-radius: 50%;
+							background-color: #9356DC;
+							padding: 10px 6px;
+							line-height: 0px;
+							color: #fff;
+							font-size: 0.80em;
+
+
+
+							@include responsive (tab-port) {
+								left: 18%;
+								padding: 16px 10px;
+							}
+
+							@include responsive (tab-land) {
+								left: 22%;
+							}
+
+							@include responsive (desktop-big) {
+								left: 14%;
+								line-height: 8px;
+								padding: 16px 13px;
+							}
+
+							@include responsive (desktop-big-plus) {
+								left: 23%;
 							}
 						}
 
-						.fa-heart {
+						i {
+							overflow: hidden;
+							display: block;
 							position: absolute;
-							right: 0px;
-							color: #d36bda;
-							opacity: 0;
+							left: 20%;
+							line-height: 18px;
+							color: $clr-primary;
+							font-size: 1em;
+
+
+							@include responsive (tab-port) {
+								left: 30%;
+							}
+
+							@include responsive (tab-land) {
+								left: 31%;
+							}
+
+							@include responsive (desktop-big) {
+								left: 25%;
+							}
+
+							@include responsive (desktop-big-plus) {
+								left: 31%;
+							}
+						}
+
+						p {
+							overflow: hidden;
+							text-align: left;
+							margin-left: 22%;
+							font-size: 0.8em;
+							font-weight: 500;
+
+							@include responsive (tab-port) {
+							}
+
+							@include responsive (desktop-big) {
+								font-size: 1.2em;
+							}
+
+							@include responsive (desktop-big-plus) {
+								font-size: 1.5em;
+							}
 						}
 					}
 				}
 			}
 		}
-	}
+		//troisieme section
+		main {
+			background-color: #f6f6f6;
+			padding-bottom: 20%;
 
-	footer {
-		background-color: #2B2D30;
-		height: 190px;
-		padding: 18px;
+			@include responsive (desktop-big-plus) {
+				font-size: 1.6em;
+			}
 
-		@include responsive (tab-port) {
-			height: 250px;
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+
+			h2 {
+				margin-left: 7%;
+				font-weight: bold;
+				padding-top: 15%;
+				margin-bottom: 5%;
+
+				@include responsive (desktop-big) {
+					font-size: 2em;
+					margin-left: 3%;
+				}
+
+				@include responsive (desktop-big-plus) {
+				}
+			}
+
+			.restaurant1 {
+				@include responsive (desktop-big) {
+					display: flex;
+					justify-content: space-evenly;
+				}
+			}
+
+			ul {
+				list-style-type: none;
+
+
+				.restaurant__new--1 {
+					@include responsive (desktop-big) {
+						left: 36%;
+					}
+
+					@include responsive (desktop-big-plus) {
+						left: 38%;
+					}
+				}
+
+				.restaurant__new {
+					display: block;
+					background-color: #99E2D0;
+					padding: 2%;
+					width: 17%;
+					height: 2vh;
+					text-align: center;
+					border-radius: 5px;
+					position: absolute;
+					right: 10%;
+					margin-top: 2%;
+
+					@include responsive (tab-port) {
+						right: 22%;
+						width: 14%;
+					}
+
+					@include responsive (tab-land) {
+						right: 25%;
+						width: 8%;
+					}
+
+					@include responsive (desktop-big) {
+						right: 15%;
+						margin-top: 1%;
+						width: 6%;
+						height: 1vh;
+					}
+
+					@include responsive (desktop-big-plus) {
+						right: 23%;
+						width: 5%;
+					}
+				}
+
+				li {
+					margin-bottom: 25px;
+
+					img {
+						display: block;
+						width: 90%;
+						height: 20vh;
+						margin-left: auto;
+						margin-right: auto;
+						border-radius: 10px 10px 0 0;
+
+						@include responsive (tab-port) {
+							height: 32vh;
+						}
+
+						@include responsive (tab-land) {
+							height: 35vh;
+						}
+
+						@include responsive (desktop-big) {
+							height: 30vh;
+						}
+
+						@include responsive (desktop-big-plus) {
+							height: 27vh;
+						}
+					}
+
+					div {
+						width: 87%;
+						height: 7vh;
+						background-color: #FEFFFF;
+						margin-right: auto;
+						margin-left: auto;
+						border-radius: 0 0 15px 15px;
+						padding: 4% 0 0 3%;
+
+						@include responsive (tab-port) {
+							padding-bottom: 4%;
+						}
+
+						@include responsive (desktop-big) {
+							font-size: 1.1em;
+						}
+
+						@include responsive (desktop-big-plus) {
+						}
+
+						p {
+							font-weight: bold;
+							text-transform: uppercase;
+
+
+							@include responsive (tab-port) {
+							}
+						}
+
+						small {
+
+
+							@include responsive (tab-port) {
+							}
+						}
+
+						.fa-heart-o--bis {
+							@include responsive (desktop-big) {
+								left: 41%;
+							}
+
+							@include responsive (desktop-big-plus) {
+								left: 43%;
+							}
+
+							.fa-heart--bis {
+								@include responsive (desktop-big) {
+									left: 0px;
+								}
+
+								@include responsive (desktop-big-plus) {
+									left: 0px;
+								}
+							}
+						}
+
+
+
+						.fa-heart-o {
+							display: block;
+							position: absolute;
+							right: 12%;
+							font-size: 1.6em;
+							margin-top: 1%;
+							color: #000;
+							cursor: pointer;
+
+							@include responsive (tab-port) {
+								right: 22%;
+							}
+
+							@include responsive (tab-land) {
+								right: 27%;
+							}
+
+							@include responsive (desktop-big) {
+								right: 15%;
+							}
+
+							@include responsive (desktop-big-plus) {
+								right: 24%;
+							}
+
+							&:hover {
+								.fa-heart {
+									opacity: 1;
+								}
+							}
+
+							.fa-heart {
+								position: absolute;
+								right: 0px;
+								color: #d36bda;
+								opacity: 0;
+							}
+						}
+					}
+				}
+			}
 		}
 
-		.footer__heading {
-			font-size: 1.3em;
-			font-family: 'Shrikhand', cursive;
-			color: #E8E9EA;
-			padding-bottom: 20px;
-		}
+		footer {
+			background-color: #2B2D30;
+			height: 25vh;
+			padding: 5%;
 
-		.footer__list {
-			font-size: 1.2em;
-			color: #E8E9EA;
-			list-style-type: none;
-			font-weight: 500;
+			@include responsive (tab-port) {
+				height: 33vh;
+			}
 
-			li {
-				padding-bottom: 10px;
+			@include responsive (desktop-big) {
+				font-size: 1.3em;
+				height: 37vh;
+			}
+
+			@include responsive (desktop-big-plus) {
+				font-size: 1.8em;
+				height: 34vh;
+			}
+
+			.footer__heading {
+				font-size: 1.3em;
+				font-family: 'Shrikhand', cursive;
+				color: #E8E9EA;
+				padding-bottom: 20px;
+			}
+
+			.footer__list {
+				font-size: 1.2em;
+				color: #E8E9EA;
+				list-style-type: none;
+				font-weight: 500;
+
+				li {
+					padding-bottom: 3%;
 
 
-				i {
-					margin-right: 12px;
+					i {
+						margin-right: 4%;
+					}
 				}
 			}
 		}

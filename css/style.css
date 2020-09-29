@@ -1,374 +1,497 @@
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 375px) {
   body {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 768px) {
-  body {
-    margin: 0 auto;
-    font-size: 1.5em;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body {
-    margin: 0 auto;
-    font-size: 1.6em;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  body {
-    margin: 0 auto;
-    font-size: 1.6em;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
+body .wrapper {
+  margin: 0 auto;
+}
 @media only screen and (min-width: 768px) {
-  body {
-    width: 90%;
+  body .wrapper {
+    width: 70%;
+    font-size: 1em;
   }
 }
-body header .header {
+@media only screen and (min-width: 1024px) {
+  body .wrapper {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .wrapper {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body .wrapper {
+    width: 60%;
+  }
+}
+body .wrapper header .header {
   font-weight: bold;
   text-align: center;
   font-family: "Shrikhand", cursive;
   font-size: 2em;
 }
-body .main__lieu {
-  height: 40px;
+@media screen and (min-width: 1440px) {
+  body .wrapper header {
+    font-size: 1.5em;
+  }
+}
+body .wrapper .main__lieu {
+  height: 4vh;
   background: linear-gradient(#CFCECF, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea);
-  padding-top: 15px;
   text-align: center;
-  margin-top: 10px;
-  font-weight: 500;
+  justify-content: center;
+  font-weight: 400;
+  padding-top: 4%;
 }
-body .main__lieu i {
-  margin-right: 15px;
+@media only screen and (min-width: 768px) {
+  body .wrapper .main__lieu {
+    padding-bottom: 3%;
+  }
 }
-body .main__heading {
+@media screen and (min-width: 1440px) {
+  body .wrapper .main__lieu {
+    font-size: 1.6em;
+  }
+}
+body .wrapper .main__lieu i {
+  margin-right: 2%;
+}
+body .wrapper .main__heading {
   background-color: #f6f6f6;
-  padding-bottom: 50px;
+  padding: 0 0 8vh 0;
 }
-body .main__heading .main__heading1 {
+@media screen and (min-width: 1440px) {
+  body .wrapper .main__heading {
+    font-size: 1.6em;
+  }
+}
+body .wrapper .main__heading .main__heading1 {
   font-weight: 600;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 11%;
+  padding-bottom: 12%;
+  font-size: 1.3em;
 }
-body .main__heading .main__heading2 {
+body .wrapper .main__heading .main__heading2 {
   display: block;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 8%;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1em;
 }
-body .main__heading .main__btn {
+body .wrapper .main__heading .main__btn {
   display: block;
   background-image: linear-gradient(#FF79DA, #9356DC);
   position: relative;
   box-shadow: 5px 5px 6px 0px #c6c6c6;
   text-align: center;
   margin: auto;
-  font-size: 1.2em;
-  padding: 15px 35px;
+  font-size: 0.9em;
+  padding: 5% 8%;
   border-radius: 60px;
   color: #fff;
-  background-size: 150%;
   cursor: pointer;
   border: none;
   transform: scale(1);
   transition: transform 400ms, background-color 300ms 150ms ease-in-out;
 }
-body .main__heading .main__btn:hover {
-  transform: scale(1.15);
-}
-body #nav {
-  padding: 10px;
-  background-color: #FFF;
-}
-body #nav h2 {
-  margin: 30px 0 15px 15px;
-  font-weight: 600;
-}
 @media only screen and (min-width: 768px) {
-  body #nav h2 {
-    margin-left: 65px;
+  body .wrapper .main__heading .main__btn {
+    padding: 4% 7%;
+    margin-bottom: 12%;
   }
 }
 @media screen and (min-width: 1440px) {
-  body #nav h2 {
-    margin-left: 130px;
+  body .wrapper .main__heading .main__btn {
+    font-size: 0.8em;
+    padding: 3% 5%;
   }
 }
-body #nav .nav {
+body .wrapper .main__heading .main__btn:hover {
+  transform: scale(1.1);
+}
+body .wrapper #nav {
+  padding: 10px;
+  background-color: #FFF;
+}
+@media only screen and (min-width: 1024px) {
+  body .wrapper #nav {
+    margin: 40px 0 80px 0;
+  }
+}
+body .wrapper #nav h2 {
+  margin: 10% 0 0% 4%;
+  font-weight: 800;
+}
+@media screen and (min-width: 1440px) {
+  body .wrapper #nav h2 {
+    font-size: 2em;
+  }
+}
+body .wrapper #nav .nav {
   padding-bottom: 0px;
 }
-body #nav .nav ol {
-  padding: 10px;
-  background-color: #fff;
-  padding-bottom: 30px;
+@media only screen and (min-width: 768px) {
+  body .wrapper #nav .nav {
+    font-size: 1.2em;
+  }
 }
-body #nav .nav ol .nav__link--active {
+body .wrapper #nav .nav ol {
+  background-color: #fff;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+body .wrapper #nav .nav ol .nav__link--change {
   animation: progress 1000ms 300ms both;
 }
-body #nav .nav ol .nav__link--change1 {
+body .wrapper #nav .nav ol .nav__link--change1 {
   animation: progress 1000ms 500ms both;
 }
-body #nav .nav ol .nav__link--change2 {
+body .wrapper #nav .nav ol .nav__link--change2 {
   animation: progress 1000ms 600ms both;
+  background-color: #f5edff;
 }
-body #nav .nav ol .nav__link {
+body .wrapper #nav .nav ol .nav__link {
   list-style-type: none;
   width: 80%;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 6%;
+  border-radius: 20px;
   font-size: 1em;
-  margin: 10px auto 20px auto;
+  margin: 5% auto 6% auto;
   background-color: #f6f6f6;
   box-shadow: 5px 5px 6px 0px #c6c6c6;
   cursor: pointer;
 }
-body #nav .nav ol .nav__link:hover {
+@media screen and (min-width: 1440px) {
+  body .wrapper #nav .nav ol .nav__link {
+    padding: 2%;
+    width: 85%;
+  }
+}
+body .wrapper #nav .nav ol .nav__link:hover {
   background-color: #f5edff;
 }
-body #nav .nav ol .nav__link div {
+body .wrapper #nav .nav ol .nav__link div {
   overflow: hidden;
   position: absolute;
-  left: 25px;
+  left: 5%;
   border-radius: 50%;
   background-color: #9356DC;
-  padding: 12px 8px;
+  padding: 10px 6px;
   line-height: 0px;
   color: #fff;
+  font-size: 0.8em;
 }
 @media only screen and (min-width: 768px) {
-  body #nav .nav ol .nav__link div {
-    left: 90px;
-    line-height: 4px;
+  body .wrapper #nav .nav ol .nav__link div {
+    left: 18%;
+    padding: 16px 10px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  body #nav .nav ol .nav__link div {
-    left: 130px;
+  body .wrapper #nav .nav ol .nav__link div {
+    left: 22%;
   }
 }
 @media screen and (min-width: 1440px) {
-  body #nav .nav ol .nav__link div {
-    left: 180px;
-    font-size: 1.5em;
-    padding: 18px 12px;
+  body .wrapper #nav .nav ol .nav__link div {
+    left: 14%;
     line-height: 8px;
+    padding: 16px 13px;
   }
 }
-body #nav .nav ol .nav__link i {
+@media screen and (min-width: 2560px) {
+  body .wrapper #nav .nav ol .nav__link div {
+    left: 23%;
+  }
+}
+body .wrapper #nav .nav ol .nav__link i {
   overflow: hidden;
   display: block;
   position: absolute;
-  left: 65px;
+  left: 20%;
   line-height: 18px;
   color: #9356DC;
   font-size: 1em;
 }
 @media only screen and (min-width: 768px) {
-  body #nav .nav ol .nav__link i {
-    left: 180px;
-    font-size: 1.5em;
+  body .wrapper #nav .nav ol .nav__link i {
+    left: 30%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .wrapper #nav .nav ol .nav__link i {
+    left: 31%;
   }
 }
 @media screen and (min-width: 1440px) {
-  body #nav .nav ol .nav__link i {
-    left: 300px;
+  body .wrapper #nav .nav ol .nav__link i {
+    left: 25%;
   }
 }
-body #nav .nav ol .nav__link p {
+@media screen and (min-width: 2560px) {
+  body .wrapper #nav .nav ol .nav__link i {
+    left: 31%;
+  }
+}
+body .wrapper #nav .nav ol .nav__link p {
   overflow: hidden;
   text-align: left;
-  margin-left: 50px;
+  margin-left: 22%;
   font-size: 0.8em;
   font-weight: 500;
 }
-@media only screen and (min-width: 768px) {
-  body #nav .nav ol .nav__link p {
-    margin-left: 120px;
-  }
-}
 @media screen and (min-width: 1440px) {
-  body #nav .nav ol .nav__link p {
+  body .wrapper #nav .nav ol .nav__link p {
     font-size: 1.2em;
-    margin-left: 160px;
   }
 }
-body main {
+@media screen and (min-width: 2560px) {
+  body .wrapper #nav .nav ol .nav__link p {
+    font-size: 1.5em;
+  }
+}
+body .wrapper main {
   background-color: #f6f6f6;
-  padding-bottom: 40px;
+  padding-bottom: 20%;
 }
-body main h2 {
-  margin-left: 25px;
+@media screen and (min-width: 2560px) {
+  body .wrapper main {
+    font-size: 1.6em;
+  }
+}
+body .wrapper main a {
+  text-decoration: none;
+  color: #000;
+}
+body .wrapper main h2 {
+  margin-left: 7%;
   font-weight: bold;
-  padding-top: 40px;
-  margin-bottom: 10px;
+  padding-top: 15%;
+  margin-bottom: 5%;
 }
-@media only screen and (min-width: 768px) {
-  body main h2 {
-    margin-left: 45px;
+@media screen and (min-width: 1440px) {
+  body .wrapper main h2 {
+    font-size: 2em;
+    margin-left: 3%;
   }
 }
 @media screen and (min-width: 1440px) {
-  body main .restaurant1 {
+  body .wrapper main .restaurant1 {
     display: flex;
     justify-content: space-evenly;
   }
 }
-body main ul {
-  margin-bottom: 40px;
+body .wrapper main ul {
   list-style-type: none;
 }
 @media screen and (min-width: 1440px) {
-  body main ul .restaurant__new--1 {
-    left: 595px;
+  body .wrapper main ul .restaurant__new--1 {
+    left: 36%;
   }
 }
-body main ul .restaurant__new {
+@media screen and (min-width: 2560px) {
+  body .wrapper main ul .restaurant__new--1 {
+    left: 38%;
+  }
+}
+body .wrapper main ul .restaurant__new {
   display: block;
   background-color: #99E2D0;
-  padding: 8px;
-  width: 70px;
-  height: 20px;
+  padding: 2%;
+  width: 17%;
+  height: 2vh;
   text-align: center;
   border-radius: 5px;
   position: absolute;
-  right: 24px;
-  margin-top: 20px;
+  right: 10%;
+  margin-top: 2%;
 }
 @media only screen and (min-width: 768px) {
-  body main ul .restaurant__new {
-    right: 95px;
-    height: 30px;
+  body .wrapper main ul .restaurant__new {
+    right: 22%;
+    width: 14%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .wrapper main ul .restaurant__new {
+    right: 25%;
+    width: 8%;
   }
 }
 @media screen and (min-width: 1440px) {
-  body main ul .restaurant__new {
-    right: 125px;
+  body .wrapper main ul .restaurant__new {
+    right: 15%;
+    margin-top: 1%;
+    width: 6%;
+    height: 1vh;
   }
 }
-body main ul li {
+@media screen and (min-width: 2560px) {
+  body .wrapper main ul .restaurant__new {
+    right: 23%;
+    width: 5%;
+  }
+}
+body .wrapper main ul li {
   margin-bottom: 25px;
 }
-body main ul li img {
+body .wrapper main ul li img {
   display: block;
   width: 90%;
-  height: 200px;
+  height: 20vh;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px 10px 0 0;
 }
 @media only screen and (min-width: 768px) {
-  body main ul li img {
-    height: 400px;
+  body .wrapper main ul li img {
+    height: 32vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .wrapper main ul li img {
+    height: 35vh;
   }
 }
 @media screen and (min-width: 1440px) {
-  body main ul li img {
-    width: 600px;
-    margin-left: 0;
-    margin-right: 0;
+  body .wrapper main ul li img {
+    height: 30vh;
   }
 }
-body main ul li div {
-  width: 90%;
-  height: 60px;
+@media screen and (min-width: 2560px) {
+  body .wrapper main ul li img {
+    height: 27vh;
+  }
+}
+body .wrapper main ul li div {
+  width: 87%;
+  height: 7vh;
   background-color: #FEFFFF;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 15px 15px;
+  padding: 4% 0 0 3%;
 }
 @media only screen and (min-width: 768px) {
-  body main ul li div {
-    height: 80px;
+  body .wrapper main ul li div {
+    padding-bottom: 4%;
   }
 }
 @media screen and (min-width: 1440px) {
-  body main ul li div {
-    width: 100%;
+  body .wrapper main ul li div {
+    font-size: 1.1em;
   }
 }
-body main ul li div p {
+body .wrapper main ul li div p {
   font-weight: bold;
   text-transform: uppercase;
-  padding: 10px 0 0 5px;
-}
-body main ul li div small {
-  padding-left: 5px;
 }
 @media screen and (min-width: 1440px) {
-  body main ul li div .fa-heart-o--bis {
-    left: 610px;
+  body .wrapper main ul li div .fa-heart-o--bis {
+    left: 41%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body .wrapper main ul li div .fa-heart-o--bis {
+    left: 43%;
   }
 }
 @media screen and (min-width: 1440px) {
-  body main ul li div .fa-heart-o--bis .fa-heart--bis {
+  body .wrapper main ul li div .fa-heart-o--bis .fa-heart--bis {
     left: 0px;
   }
 }
-body main ul li div .fa-heart-o {
+@media screen and (min-width: 2560px) {
+  body .wrapper main ul li div .fa-heart-o--bis .fa-heart--bis {
+    left: 0px;
+  }
+}
+body .wrapper main ul li div .fa-heart-o {
   display: block;
   position: absolute;
-  right: 35px;
-  font-size: 1.7em;
-  margin-top: 15px;
+  right: 12%;
+  font-size: 1.6em;
+  margin-top: 1%;
   color: #000;
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
-  body main ul li div .fa-heart-o {
-    right: 110px;
+  body .wrapper main ul li div .fa-heart-o {
+    right: 22%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .wrapper main ul li div .fa-heart-o {
+    right: 27%;
   }
 }
 @media screen and (min-width: 1440px) {
-  body main ul li div .fa-heart-o {
-    right: 130px;
+  body .wrapper main ul li div .fa-heart-o {
+    right: 15%;
   }
 }
-body main ul li div .fa-heart-o:hover .fa-heart {
+@media screen and (min-width: 2560px) {
+  body .wrapper main ul li div .fa-heart-o {
+    right: 24%;
+  }
+}
+body .wrapper main ul li div .fa-heart-o:hover .fa-heart {
   opacity: 1;
 }
-body main ul li div .fa-heart-o .fa-heart {
+body .wrapper main ul li div .fa-heart-o .fa-heart {
   position: absolute;
   right: 0px;
   color: #d36bda;
   opacity: 0;
 }
-body footer {
+body .wrapper footer {
   background-color: #2B2D30;
-  height: 190px;
-  padding: 18px;
+  height: 25vh;
+  padding: 5%;
 }
 @media only screen and (min-width: 768px) {
-  body footer {
-    height: 250px;
+  body .wrapper footer {
+    height: 33vh;
   }
 }
-body footer .footer__heading {
+@media screen and (min-width: 1440px) {
+  body .wrapper footer {
+    font-size: 1.3em;
+    height: 37vh;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body .wrapper footer {
+    font-size: 1.8em;
+    height: 34vh;
+  }
+}
+body .wrapper footer .footer__heading {
   font-size: 1.3em;
   font-family: "Shrikhand", cursive;
   color: #E8E9EA;
   padding-bottom: 20px;
 }
-body footer .footer__list {
+body .wrapper footer .footer__list {
   font-size: 1.2em;
   color: #E8E9EA;
   list-style-type: none;
   font-weight: 500;
 }
-body footer .footer__list li {
-  padding-bottom: 10px;
+body .wrapper footer .footer__list li {
+  padding-bottom: 3%;
 }
-body footer .footer__list li i {
-  margin-right: 12px;
+body .wrapper footer .footer__list li i {
+  margin-right: 4%;
 }
 
 @keyframes progress {
@@ -406,178 +529,319 @@ body footer .footer__list li i {
 body {
   font-family: "Roboto", sans-serif;
 }
-body header .fa-arrow-left {
+body .container {
+  width: 100%;
+  min-width: 425px;
+  box-sizing: border-box;
+  font-size: 1.3em;
+}
+@media only screen and (min-width: 768px) {
+  body .container {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.4em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .container {
+    width: 50%;
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body .container {
+    font-size: 2.5em;
+  }
+}
+body .container header .header {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8em;
+}
+body .container header .fa-arrow-left {
   display: block;
   position: absolute;
-  top: 14px;
-  left: 30px;
+  top: 1%;
+  left: 5%;
   color: #625454;
   font-size: 1.2em;
   font-weight: 100;
 }
-body .restaurant__img {
-  width: 100%;
+@media only screen and (min-width: 768px) {
+  body .container header .fa-arrow-left {
+    left: 18%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .container header .fa-arrow-left {
+    left: 23%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .container header .fa-arrow-left {
+    left: 28%;
+  }
+}
+body .container .restaurant__img {
+  min-width: 425px;
   position: absolute;
-  height: 400px;
+  height: 540vh;
 }
-body .restaurant__img img {
+@media only screen and (min-width: 768px) {
+  body .container .restaurant__img {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .container .restaurant__img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .container .restaurant__img {
+    width: 50%;
+  }
+}
+body .container .restaurant__img img {
   width: 100%;
 }
-body a {
+body .container a {
   text-decoration: none;
   color: #000;
 }
-body #menu {
-  padding-top: 30px;
+body .container #menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   opacity: 0.99;
-  margin-top: 170px;
+  margin-top: 54%;
+  padding: 1%;
 }
-body #menu .menu__icon .fa-heart-o {
+@media only screen and (min-width: 1024px) {
+  body .container #menu {
+    border-radius: 60px 60px 0 0;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body .container #menu {
+    border-radius: 120px 120px 0 0;
+  }
+}
+body .container #menu .menu__icon .fa-heart-o {
   display: block;
   position: absolute;
-  right: 20px;
+  right: -19%;
   color: #000;
   font-size: 1.7em;
-  margin-top: 5px;
+  margin-top: 8%;
   cursor: pointer;
 }
-body #menu .menu__icon .fa-heart-o:hover .fa-heart {
+@media only screen and (min-width: 375px) {
+  body .container #menu .menu__icon .fa-heart-o {
+    right: -2%;
+  }
+}
+@media only screen and (min-width: 425px) {
+  body .container #menu .menu__icon .fa-heart-o {
+    right: 10%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body .container #menu .menu__icon .fa-heart-o {
+    right: 23%;
+    margin-top: 4%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .container #menu .menu__icon .fa-heart-o {
+    right: 26%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .container #menu .menu__icon .fa-heart-o {
+    right: 30%;
+    margin-top: 3%;
+  }
+}
+body .container #menu .menu__icon .fa-heart-o:hover .fa-heart {
   opacity: 1;
 }
-body #menu .menu__icon .fa-heart-o .fa-heart {
+body .container #menu .menu__icon .fa-heart-o .fa-heart {
   position: absolute;
-  right: 0px;
+  right: 0%;
   color: #d36bda;
   opacity: 0;
 }
-body #menu .heading1 {
-  font-weight: 300;
+body .container #menu .heading1 {
   font-family: "Shrikhand", cursive;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  font-size: 1.6em;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  font-size: 1.5em;
+  padding-left: 3%;
 }
-body #menu .heading2 {
+body .container #menu .heading2 {
   font-size: 1em;
-  margin-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 5px;
+  padding-top: 6%;
+  padding-bottom: 1%;
   color: dimgray;
   font-weight: 400;
+  padding-left: 4%;
 }
-body #menu .divider {
+body .container #menu .divider {
   display: block;
-  position: absolute;
   width: 10%;
   border: solid 1px #99E2D0;
-  margin-left: 10px;
+  margin-left: 4%;
 }
-body #menu .menu {
-  margin: auto;
+body .container #menu .menu {
   list-style-type: none;
-  padding: 10px;
-  margin-top: 10px;
+  padding-top: 5%;
 }
-body #menu .menu .menu__plat--1 {
+body .container #menu .menu .menu__plat--1 {
   animation: progress 800ms 250ms both;
 }
-body #menu .menu .menu__plat--2 {
+body .container #menu .menu .menu__plat--2 {
   animation: progress 800ms 450ms both;
 }
-body #menu .menu .menu__plat--3 {
+body .container #menu .menu .menu__plat--3 {
   animation: progress 800ms 550ms both;
 }
-body #menu .menu .menu__plat--4 {
+body .container #menu .menu .menu__plat--4 {
   animation: progress 800ms 700ms both;
 }
-body #menu .menu__plat {
-  width: 100%;
-  padding-bottom: 10px;
+body .container #menu .menu__plat {
+  width: 90%;
+  margin: auto;
+  padding: 3%;
   background-color: #FFF;
-  margin-bottom: 15px;
+  margin-bottom: 4%;
   border-radius: 15px;
   box-shadow: 5px 5px 6px 0px #c6c6c6;
-  z-index: 1;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
-body #menu .menu__plat:hover {
+@media screen and (min-width: 2560px) {
+  body .container #menu .menu__plat {
+    border-radius: 45px;
+  }
+}
+body .container #menu .menu__plat:active {
   background-color: #f5edff;
 }
-body #menu .menu__plat:hover .menu__animation {
-  transform: translateX(-90px);
-  opacity: 1;
+body .container #menu .menu__plat:active .menu__animation {
+  transform: translateX(-90%);
 }
-body #menu .menu__plat:hover .menu__animation .fa-check {
+body .container #menu .menu__plat:active .menu__animation .fa-check {
   transform: rotate(360deg);
+}
+body .container #menu .menu__plat:active .menu__price {
+  transform: translateX(-150%);
+}
+body .container #menu .menu__plat:active .menu__price .menu__hidden {
+  display: none;
+  overflow-wrap: break-word;
+}
+@media only screen and (min-width: 768px) {
+  body .container #menu .menu__plat:active .menu__price {
+    transform: translateX(-190%);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .container #menu .menu__plat:active .menu__price {
+    transform: translateX(-220%);
+  }
+}
+body .container #menu .menu__plat:active .menu__plus .menu__hidden {
+  width: 10px;
+  display: block;
+}
+body .container #menu .menu__plat .menu__animation {
   opacity: 1;
-}
-body #menu .menu__plat:hover .menu__price {
-  transform: translateX(-35px);
-}
-body #menu .menu__plat .menu__animation {
-  opacity: 0;
   position: absolute;
-  right: -90px;
+  display: flex;
+  top: 0px;
+  bottom: 0px;
+  right: -20%;
   background-color: #99E2D0;
-  width: 60px;
-  height: 65px;
-  z-index: 1;
-  white-space: nowrap;
+  width: 20%;
+  height: auto;
   border-radius: 0 15px 15px 0;
   transform-origin: left;
   transform: translateX(0);
-  transition: transform 800ms 150ms ease-in-out;
+  transition: transform 300ms 50ms ease;
 }
-body #menu .menu__plat .menu__animation .fa-check {
-  overflow: hidden;
-  position: absolute;
-  right: 20px;
+@media screen and (min-width: 2560px) {
+  body .container #menu .menu__plat .menu__animation {
+    border-radius: 0 45px 45px 0;
+  }
+}
+body .container #menu .menu__plat .menu__animation .fa-check {
+  margin: auto;
   color: #99E2D0;
   border-radius: 50%;
   background-color: #fff;
-  padding: 3px 3px;
-  margin-top: 24px;
+  padding: 2% 2%;
   z-index: 1;
-  opacity: 0;
+  opacity: 1;
   transform: rotate(0);
-  transition: transform 800ms 250ms ease-in-out;
+  transition: transform 300ms 50ms ease-out;
 }
-body #menu .menu__plat .menu__price {
+body .container #menu .menu__plat .menu__price {
   position: absolute;
-  right: 30px;
-  padding-top: 30px;
+  right: 6%;
+  margin-top: 9%;
   font-weight: bold;
   transform: translateX(0);
-  transition: transform 800ms 200ms ease-in-out;
+  transition: transform 300ms 50ms ease;
 }
-body #menu .menu__plat .menu__name {
+@media only screen and (min-width: 375px) {
+  body .container #menu .menu__plat .menu__price {
+    margin-top: 7%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body .container #menu .menu__plat .menu__price {
+    margin-top: 7%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .container #menu .menu__plat .menu__price {
+    margin-top: 5%;
+  }
+}
+body .container #menu .menu__plat .menu__name {
   font-weight: 500;
-  margin-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  font-size: 1.1em;
+  padding-bottom: 6px;
 }
-body #menu .menu__plat .menu__plus {
-  margin-left: 10px;
+body .container #menu .menu__plat .menu__plus {
   color: #050505;
   font-weight: 400;
-  font-size: 1em;
+  width: auto;
 }
-body #menu .valider {
-  padding-bottom: 50px;
-  padding-top: 10px;
+@media only screen and (min-width: 768px) {
+  body .container #menu .menu__plat .menu__plus {
+    font-size: 0.9em;
+  }
 }
-body #menu .valider .valider__btn {
+body .container #menu .valider {
+  padding-bottom: 20%;
+  padding-top: 10%;
+}
+body .container #menu .valider .valider__btn {
   display: block;
   text-align: center;
   margin: auto;
-  width: 60%;
-  padding: 15px;
+  width: 50%;
+  padding: 4%;
   border-radius: 55px;
   color: #fff;
+  font-size: 1.1em;
   cursor: pointer;
   border: none;
   box-shadow: 5px 5px 6px 0px #c6c6c6;
@@ -588,8 +852,35 @@ body #menu .valider .valider__btn {
   transform: scale(1);
   transition: transform 400ms, background-color 300ms 150ms ease-in-out;
 }
-body #menu .valider .valider__btn:hover {
-  transform: scale(1.15);
+@media only screen and (min-width: 768px) {
+  body .container #menu .valider .valider__btn {
+    width: 50%;
+    padding: 3%;
+  }
+}
+body .container #menu .valider .valider__btn:hover {
+  transform: scale(1.1);
+}
+body .container footer {
+  background-color: #2B2D30;
+  height: 30vh;
+  padding: 5%;
+}
+body .container footer .footer__heading {
+  font-family: "Shrikhand", cursive;
+  color: #E8E9EA;
+  padding-bottom: 20px;
+}
+body .container footer .footer__list {
+  color: #E8E9EA;
+  list-style-type: none;
+  font-weight: 500;
+}
+body .container footer .footer__list li {
+  padding-bottom: 3%;
+}
+body .container footer .footer__list li i {
+  margin-right: 4%;
 }
 
 @keyframes progress {
@@ -597,28 +888,6 @@ body #menu .valider .valider__btn:hover {
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-}
-@keyframes progress1 {
-  0% {
-    transform: translateX(-5px);
-    opacity: 1;
-  }
-  10% {
-    transform: translateX(-15px);
-  }
-  30% {
-    transform: translateX(-35px);
-  }
-  60% {
-    transform: translateX(-55px);
-  }
-  80% {
-    transform: translateX(-65px);
-  }
-  100% {
-    transform: translateX(-80px);
     opacity: 1;
   }
 }
