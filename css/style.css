@@ -3,6 +3,12 @@
     margin: 0 auto;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    font-size: 2em;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +20,7 @@ body .wrapper {
 @media only screen and (min-width: 768px) {
   body .wrapper {
     width: 70%;
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -25,11 +31,13 @@ body .wrapper {
 @media screen and (min-width: 1440px) {
   body .wrapper {
     width: 80%;
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 2560px) {
   body .wrapper {
     width: 60%;
+    font-size: 1.6em;
   }
 }
 body .wrapper header .header {
@@ -127,6 +135,11 @@ body .wrapper #nav {
     margin: 40px 0 80px 0;
   }
 }
+@media screen and (min-width: 2560px) {
+  body .wrapper #nav {
+    font-size: 1.1em;
+  }
+}
 body .wrapper #nav h2 {
   margin: 10% 0 0% 4%;
   font-weight: 800;
@@ -180,7 +193,6 @@ body .wrapper #nav .nav ol .nav__link:hover {
   background-color: #f5edff;
 }
 body .wrapper #nav .nav ol .nav__link div {
-  overflow: hidden;
   position: absolute;
   left: 5%;
   border-radius: 50%;
@@ -211,10 +223,11 @@ body .wrapper #nav .nav ol .nav__link div {
 @media screen and (min-width: 2560px) {
   body .wrapper #nav .nav ol .nav__link div {
     left: 23%;
+    line-height: 18px;
+    padding: 20px 20px;
   }
 }
 body .wrapper #nav .nav ol .nav__link i {
-  overflow: hidden;
   display: block;
   position: absolute;
   left: 20%;
@@ -224,7 +237,8 @@ body .wrapper #nav .nav ol .nav__link i {
 }
 @media only screen and (min-width: 768px) {
   body .wrapper #nav .nav ol .nav__link i {
-    left: 30%;
+    left: 28%;
+    font-size: 1.5em;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -235,11 +249,13 @@ body .wrapper #nav .nav ol .nav__link i {
 @media screen and (min-width: 1440px) {
   body .wrapper #nav .nav ol .nav__link i {
     left: 25%;
+    margin-top: 1%;
   }
 }
 @media screen and (min-width: 2560px) {
   body .wrapper #nav .nav ol .nav__link i {
-    left: 31%;
+    left: 30%;
+    font-size: 2em;
   }
 }
 body .wrapper #nav .nav ol .nav__link p {
@@ -295,12 +311,12 @@ body .wrapper main ul {
 }
 @media screen and (min-width: 1440px) {
   body .wrapper main ul .restaurant__new--1 {
-    left: 36%;
+    left: 39.4%;
   }
 }
 @media screen and (min-width: 2560px) {
   body .wrapper main ul .restaurant__new--1 {
-    left: 38%;
+    left: 41.5%;
   }
 }
 body .wrapper main ul .restaurant__new {
@@ -318,7 +334,9 @@ body .wrapper main ul .restaurant__new {
 @media only screen and (min-width: 768px) {
   body .wrapper main ul .restaurant__new {
     right: 22%;
-    width: 14%;
+    width: 13%;
+    padding: 2%;
+    height: 3vh;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -329,10 +347,11 @@ body .wrapper main ul .restaurant__new {
 }
 @media screen and (min-width: 1440px) {
   body .wrapper main ul .restaurant__new {
-    right: 15%;
+    right: 13%;
     margin-top: 1%;
     width: 6%;
-    height: 1vh;
+    height: 3vh;
+    padding: 8px;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -352,6 +371,11 @@ body .wrapper main ul li img {
   margin-right: auto;
   border-radius: 10px 10px 0 0;
 }
+@media only screen and (min-width: 425px) {
+  body .wrapper main ul li img {
+    height: 26vh;
+  }
+}
 @media only screen and (min-width: 768px) {
   body .wrapper main ul li img {
     height: 32vh;
@@ -364,12 +388,12 @@ body .wrapper main ul li img {
 }
 @media screen and (min-width: 1440px) {
   body .wrapper main ul li img {
-    height: 30vh;
+    height: 29vh;
   }
 }
 @media screen and (min-width: 2560px) {
   body .wrapper main ul li img {
-    height: 27vh;
+    height: 22vh;
   }
 }
 body .wrapper main ul li div {
@@ -397,12 +421,12 @@ body .wrapper main ul li div p {
 }
 @media screen and (min-width: 1440px) {
   body .wrapper main ul li div .fa-heart-o--bis {
-    left: 41%;
+    left: 42%;
   }
 }
 @media screen and (min-width: 2560px) {
   body .wrapper main ul li div .fa-heart-o--bis {
-    left: 43%;
+    left: 44%;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -530,16 +554,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body .container {
-  width: 100%;
-  min-width: 425px;
   box-sizing: border-box;
-  font-size: 1.3em;
 }
 @media only screen and (min-width: 768px) {
   body .container {
     width: 70%;
     margin: 0 auto;
-    font-size: 1.4em;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -550,19 +570,19 @@ body .container {
 @media screen and (min-width: 1440px) {
   body .container {
     width: 50%;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 2560px) {
   body .container {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 }
 body .container header .header {
   font-weight: bold;
   text-align: center;
   font-family: "Shrikhand", cursive;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 body .container header .fa-arrow-left {
   display: block;
@@ -589,7 +609,6 @@ body .container header .fa-arrow-left {
   }
 }
 body .container .restaurant__img {
-  min-width: 425px;
   position: absolute;
   height: 540vh;
 }
@@ -632,50 +651,44 @@ body .container #menu {
     border-radius: 120px 120px 0 0;
   }
 }
+body .container #menu .menu__icon {
+  display: inline-block;
+}
 body .container #menu .menu__icon .fa-heart-o {
-  display: block;
-  position: absolute;
-  right: -19%;
   color: #000;
-  font-size: 1.7em;
-  margin-top: 8%;
+  font-size: 1.1em;
+  margin-left: 80px;
   cursor: pointer;
+  position: relative;
 }
 @media only screen and (min-width: 375px) {
   body .container #menu .menu__icon .fa-heart-o {
-    right: -2%;
-  }
-}
-@media only screen and (min-width: 425px) {
-  body .container #menu .menu__icon .fa-heart-o {
-    right: 10%;
+    margin-left: 180px;
   }
 }
 @media only screen and (min-width: 768px) {
   body .container #menu .menu__icon .fa-heart-o {
-    right: 23%;
-    margin-top: 4%;
+    margin-left: 280px;
   }
 }
 @media only screen and (min-width: 1024px) {
   body .container #menu .menu__icon .fa-heart-o {
-    right: 26%;
+    margin-left: 350px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2560px) {
   body .container #menu .menu__icon .fa-heart-o {
-    right: 30%;
-    margin-top: 3%;
+    margin-left: 670px;
   }
 }
 body .container #menu .menu__icon .fa-heart-o:hover .fa-heart {
   opacity: 1;
 }
 body .container #menu .menu__icon .fa-heart-o .fa-heart {
-  position: absolute;
-  right: 0%;
   color: #d36bda;
   opacity: 0;
+  position: absolute;
+  right: 0px;
 }
 body .container #menu .heading1 {
   font-family: "Shrikhand", cursive;
@@ -685,12 +698,17 @@ body .container #menu .heading1 {
   padding-left: 3%;
 }
 body .container #menu .heading2 {
-  font-size: 1em;
+  font-size: 1.1em;
   padding-top: 6%;
   padding-bottom: 1%;
   color: dimgray;
   font-weight: 400;
   padding-left: 4%;
+}
+@media only screen and (min-width: 768px) {
+  body .container #menu .heading2 {
+    font-size: 1.3em;
+  }
 }
 body .container #menu .divider {
   display: block;
@@ -720,6 +738,7 @@ body .container #menu .menu__plat {
   padding: 3%;
   background-color: #FFF;
   margin-bottom: 4%;
+  z-index: 1;
   border-radius: 15px;
   box-shadow: 5px 5px 6px 0px #c6c6c6;
   position: relative;
@@ -731,35 +750,47 @@ body .container #menu .menu__plat {
     border-radius: 45px;
   }
 }
-body .container #menu .menu__plat:active {
+body .container #menu .menu__plat:hover {
   background-color: #f5edff;
 }
-body .container #menu .menu__plat:active .menu__animation {
+body .container #menu .menu__plat:hover .menu__animation {
   transform: translateX(-90%);
 }
-body .container #menu .menu__plat:active .menu__animation .fa-check {
+body .container #menu .menu__plat:hover .menu__animation .fa-check {
   transform: rotate(360deg);
 }
-body .container #menu .menu__plat:active .menu__price {
-  transform: translateX(-150%);
+body .container #menu .menu__plat:hover .menu__name .menu__hidden1 {
+  visibility: hidden;
+  display: inline-block;
+  z-index: -1;
 }
-body .container #menu .menu__plat:active .menu__price .menu__hidden {
-  display: none;
-  overflow-wrap: break-word;
+body .container #menu .menu__plat:hover .menu__name .menu__hidden1::before {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+body .container #menu .menu__plat:hover .menu__plus .menu__hidden {
+  visibility: hidden;
+  display: inline-block;
+  z-index: -1;
+}
+body .container #menu .menu__plat:hover .menu__plus .menu__hidden::before {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+body .container #menu .menu__plat:hover .menu__plus .menu__price {
+  transform: translateX(-240%);
 }
 @media only screen and (min-width: 768px) {
-  body .container #menu .menu__plat:active .menu__price {
-    transform: translateX(-190%);
+  body .container #menu .menu__plat:hover .menu__plus .menu__price {
+    transform: translateX(-260%);
   }
 }
 @media only screen and (min-width: 1024px) {
-  body .container #menu .menu__plat:active .menu__price {
-    transform: translateX(-220%);
+  body .container #menu .menu__plat:hover .menu__plus .menu__price {
+    transform: translateX(-290%);
   }
-}
-body .container #menu .menu__plat:active .menu__plus .menu__hidden {
-  width: 10px;
-  display: block;
 }
 body .container #menu .menu__plat .menu__animation {
   opacity: 1;
@@ -771,10 +802,11 @@ body .container #menu .menu__plat .menu__animation {
   background-color: #99E2D0;
   width: 20%;
   height: auto;
+  z-index: 1;
   border-radius: 0 15px 15px 0;
   transform-origin: left;
   transform: translateX(0);
-  transition: transform 300ms 50ms ease;
+  transition: transform 300ms 50ms ease-in-out;
 }
 @media screen and (min-width: 2560px) {
   body .container #menu .menu__plat .menu__animation {
@@ -787,47 +819,54 @@ body .container #menu .menu__plat .menu__animation .fa-check {
   border-radius: 50%;
   background-color: #fff;
   padding: 2% 2%;
-  z-index: 1;
   opacity: 1;
   transform: rotate(0);
-  transition: transform 300ms 50ms ease-out;
-}
-body .container #menu .menu__plat .menu__price {
-  position: absolute;
-  right: 6%;
-  margin-top: 9%;
-  font-weight: bold;
-  transform: translateX(0);
-  transition: transform 300ms 50ms ease;
-}
-@media only screen and (min-width: 375px) {
-  body .container #menu .menu__plat .menu__price {
-    margin-top: 7%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  body .container #menu .menu__plat .menu__price {
-    margin-top: 7%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body .container #menu .menu__plat .menu__price {
-    margin-top: 5%;
-  }
+  transition: transform 300ms 100ms cubic-bezier(1, 0, 0.77, 0.44);
 }
 body .container #menu .menu__plat .menu__name {
   font-weight: 500;
   padding-bottom: 6px;
+  font-size: 1.2em;
+}
+body .container #menu .menu__plat .menu__name .menu__hidden1 {
+  position: relative;
+  transform-origin: left;
+  opacity: 1;
+  z-index: 1;
+}
+body .container #menu .menu__plat .menu__name .menu__hidden1::before {
+  position: absolute;
+  content: "...";
+  opacity: 0;
+  z-index: -1;
 }
 body .container #menu .menu__plat .menu__plus {
   color: #050505;
   font-weight: 400;
-  width: auto;
+  font-size: 0.9em;
+  display: inline-block;
 }
-@media only screen and (min-width: 768px) {
-  body .container #menu .menu__plat .menu__plus {
-    font-size: 0.9em;
-  }
+body .container #menu .menu__plat .menu__plus .menu__hidden {
+  position: relative;
+  transform-origin: left;
+  opacity: 1;
+  z-index: 1;
+}
+body .container #menu .menu__plat .menu__plus .menu__hidden::before {
+  position: absolute;
+  content: "...";
+  opacity: 0;
+  z-index: -1;
+}
+body .container #menu .menu__plat .menu__plus .menu__price {
+  position: absolute;
+  display: inline-block;
+  right: 3%;
+  font-size: 1.1em;
+  margin-left: 5%;
+  font-weight: bold;
+  transform: translateX(0);
+  transition: transform 300ms 50ms ease-in-out;
 }
 body .container #menu .valider {
   padding-bottom: 20%;
@@ -863,8 +902,9 @@ body .container #menu .valider .valider__btn:hover {
 }
 body .container footer {
   background-color: #2B2D30;
-  height: 30vh;
+  height: 28vh;
   padding: 5%;
+  font-size: 1.3em;
 }
 body .container footer .footer__heading {
   font-family: "Shrikhand", cursive;
@@ -889,6 +929,14 @@ body .container footer .footer__list li i {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes progress1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

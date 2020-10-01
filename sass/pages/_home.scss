@@ -52,7 +52,7 @@ body {
 
 		@include responsive (tab-port) {
 			width: 70%;
-			font-size:1em;
+			font-size: 1.3em;
 		}
 
 		@include responsive (tab-land) {
@@ -61,10 +61,12 @@ body {
 
 		@include responsive (desktop-big) {
 			width: 80%;
+			font-size: 1.5em;
 		}
 
 		@include responsive (desktop-big-plus) {
 			width: 60%;
+			font-size: 1.6em;
 		}
 
 		header {
@@ -170,6 +172,10 @@ body {
 				margin: 40px 0 80px 0;
 			}
 
+			@include responsive (desktop-big-plus) {
+				font-size: 1.1em;
+			}
+
 			h2 {
 				margin: 10% 0 0% 4%;
 				font-weight: 800;
@@ -226,7 +232,6 @@ body {
 						}
 
 						div {
-							overflow: hidden;
 							position: absolute;
 							left: 5%;
 							border-radius: 50%;
@@ -255,11 +260,12 @@ body {
 
 							@include responsive (desktop-big-plus) {
 								left: 23%;
+								line-height: 18px;
+								padding: 20px 20px;
 							}
 						}
 
 						i {
-							overflow: hidden;
 							display: block;
 							position: absolute;
 							left: 20%;
@@ -269,7 +275,8 @@ body {
 
 
 							@include responsive (tab-port) {
-								left: 30%;
+								left: 28%;
+								font-size: 1.5em;
 							}
 
 							@include responsive (tab-land) {
@@ -278,10 +285,12 @@ body {
 
 							@include responsive (desktop-big) {
 								left: 25%;
+								margin-top: 1%;
 							}
 
 							@include responsive (desktop-big-plus) {
-								left: 31%;
+								left: 30%;
+								font-size: 2em;
 							}
 						}
 
@@ -349,11 +358,11 @@ body {
 
 				.restaurant__new--1 {
 					@include responsive (desktop-big) {
-						left: 36%;
+						left: 39.4%;
 					}
 
 					@include responsive (desktop-big-plus) {
-						left: 38%;
+						left: 41.5%;
 					}
 				}
 
@@ -371,7 +380,9 @@ body {
 
 					@include responsive (tab-port) {
 						right: 22%;
-						width: 14%;
+						width: 13%;
+						padding: 2%;
+						height: 3vh;
 					}
 
 					@include responsive (tab-land) {
@@ -380,10 +391,11 @@ body {
 					}
 
 					@include responsive (desktop-big) {
-						right: 15%;
+						right: 13%;
 						margin-top: 1%;
 						width: 6%;
-						height: 1vh;
+						height: 3vh;
+						padding: 8px;
 					}
 
 					@include responsive (desktop-big-plus) {
@@ -403,6 +415,10 @@ body {
 						margin-right: auto;
 						border-radius: 10px 10px 0 0;
 
+						@include responsive (phone) {
+							height: 26vh;
+						}
+
 						@include responsive (tab-port) {
 							height: 32vh;
 						}
@@ -412,11 +428,11 @@ body {
 						}
 
 						@include responsive (desktop-big) {
-							height: 30vh;
+							height: 29vh;
 						}
 
 						@include responsive (desktop-big-plus) {
-							height: 27vh;
+							height: 22vh;
 						}
 					}
 
@@ -458,11 +474,11 @@ body {
 
 						.fa-heart-o--bis {
 							@include responsive (desktop-big) {
-								left: 41%;
+								left: 42%;
 							}
 
 							@include responsive (desktop-big-plus) {
-								left: 43%;
+								left: 44%;
 							}
 
 							.fa-heart--bis {

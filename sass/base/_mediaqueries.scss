@@ -39,22 +39,23 @@
 body {
 	@include responsive (phone) {
 		margin: 0 auto;
-		
 	}
 
 	@include responsive (tab-port) {
-	
+		
 	}
 
 	@include responsive (tab-land) {
-		
 	}
 
 	@include responsive (desktop-big) {
-		
 	}
 
 	@include responsive (desktop-big) {
 	}
 }
-
+.wrapper {
+	@include responsive (desktop-big) {
+		font-size:2em;
+	}
+}
