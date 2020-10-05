@@ -1,0 +1,35 @@
+header {
+
+    .header {
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Shrikhand', cursive;
+        font-size: 2em;
+    }
+
+    @include responsive (desktop-big) {
+        font-size: 1.5em;
+    }
+
+    .fa-arrow-left {
+        display: block;
+        position: absolute;
+        top: 1%;
+        left: 5%;
+        color: #625454;
+        font-size: 1.2em;
+        font-weight: 100;
+
+        @include responsive (tab-port) {
+            left: 18%;
+        }
+
+        @include responsive (tab-land) {
+            left: 23%;
+        }
+
+        @include responsive (desktop-big) {
+            left: 28%;
+        }
+    }
+}

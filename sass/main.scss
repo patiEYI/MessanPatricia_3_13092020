@@ -1,8 +1,16 @@
-@import "./base/mediaqueries";
 @import "./utils/variables";
-@import "./utils/mixins";
+@import "./base/mediaqueries";
+
+
+@import "./layout/footer";
+@import "./layout/header";
+
+@import "./components/buttons";
+
+
 
 @import "./pages/home";
 @import "./pages/restaurant";
+@import "./pages/loading";
 
 

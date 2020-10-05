@@ -5,14 +5,16 @@
     <title>ohmyfood</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand" rel="stylesheet">
     <script src="https://use.fontawesome.com/1c244cce6f.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 
 </head>
 
 <body>
+   <div id="chargement"></div>
     <section class="wrapper">
         <!--header-->
         <header>
@@ -21,17 +23,14 @@
         <!--section1-->
         <section class="main">
 
-            <p class="main__lieu"><i class="fa fa-map-marker fa"></i>Paris, Belleville</p>
+            <p class="main__lieu"><i class="fa fa-map-marker-alt fa"></i>Paris, Belleville</p>
 
             <div class="main__heading">
                 <h2 class="main__heading1">Book the menu you like</h2>
                 <p class="main__heading2">Discover top-of-the-art restaurants we <br />picked for you</p>
-
-                <button class="main__btn">
-                    Explore your restaurants
-                </button>
+                <div class="valider"><button class="valider__btn">Explore your restaurants</button></div>
             </div>
-
+           
 
 
         </section>
@@ -40,9 +39,9 @@
             <h2>How it works</h2>
             <nav class="nav">
                 <ol>
-                    <li class="nav__link nav__link--change"><div>1</div><i class="fas fa-mobile fa "></i><p>Choose a restaurant</p> </li>
-                    <li class="nav__link nav__link--change1 "><div>2</div> <i class="fas fa-bars fa"></i><p>Create your menu</p>  </li>
-                    <li class="nav__link nav__link--change2"><div>3</div> <i class="fas fa-bars fa "></i><p>Go enjoy it at the restaurant</p> </li>
+                    <li class="nav__link nav__link--change"><div class="nav__link--1">1</div><i class="fas fa-mobile-alt  "></i><p>Choose a restaurant</p> </li>
+                    <li class="nav__link nav__link--change1 "><div  class="nav__link--2">2</div> <i class="fas fa-th-list "></i><p>Create your menu</p>  </li>
+                    <li class="nav__link nav__link--change2"><div  class="nav__link--3">3</div><i class="fas fa-store "></i> <p>Go enjoy it at the restaurant</p> </li>
                 </ol>
 
             </nav>
@@ -58,7 +57,7 @@
                     <span class="restaurant__new restaurant__new--1">New</span>
                     <a href="palette.html"> <img src="img/palette.jpg" alt="photo restaurant" /></a>
                     <div>
-                        <i class="fa fa-heart-o fa fa-heart-o--bis"><i class="fa fa-heart fa-heart--bis"></i></i>
+                        <i class="fas fa-heart  fa fa-heart--bis" aria-hidden="true"></i>
                         <a href="palette.html"><p>The Full Palette</p></a>
                         <small>New York </small>
 
@@ -68,8 +67,9 @@
                 <li class="restaurant">
                     <span class="restaurant__new">New</span>
                     <a href="note.html"><img src="img/note.jpg" alt="photo restaurant" /></a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20913.952620527638!2d2.0110835395507807!3d49.06299500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f480b380299f%3A0xf146bf7c637d8eee!2sBois%20Angot!5e0!3m2!1sfr!2sfr!4v1601840209574!5m2!1sfr!2sfr" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     <div>
-                        <i class="fa fa-heart-o fa"><i class="fa fa-heart"></i></i>
+                        <i class="fas fa-heart "></i>
                         <a href="note.html"><p class="restaurant__name">The Enchanted Plate</p></a>
                         <small restaurant__lieu>New York</small>
 
@@ -82,7 +82,7 @@
 
                     <a href="francaise.html"><img src="img/francaise.jpg" alt="photo restaurant" /></a>
                     <div>
-                        <i class="fa fa-heart-o fa fa-heart-o--bis"><i class="fa fa-heart fa-heart--bis"></i></i>
+                        <i class="fas fa-heart fas fa-heart--bis" aria-hidden="true" ></i>
                         <a href="francaise.html"><p>Bastille</p></a>
                         <small>New York</small>
 
@@ -93,7 +93,7 @@
 
                     <a href="delice.html"><img src="img/delice.jpg" alt="photo restaurant" /></a>
                     <div>
-                        <i class="fa fa-heart-o fa"><i class="fa fa-heart"></i></i>
+                        <i class="fas fa-heart "></i>
                         <a href="delice.html"><p>Le Gourmand</p></a>
                         <small>New York</small>
 
@@ -109,7 +109,7 @@
                 <li><i class="fa fa-handshake-o fa"> </i>Become a patner</li>
 
                 <li>legal</li>
-                <li>contact</li>
+                <li class="footer__contact"><a href="patriciasparow@gmail.com">contact</a></li>
             </ul>
         </footer>
     </section>

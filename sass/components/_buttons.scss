@@ -1,0 +1,63 @@
+//button valider
+.valider {
+
+
+    @include responsive (tab-land) {
+    }
+
+    .valider__btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 68%;
+        padding: 4% 9%;
+        border-radius: 50px;
+        color: #fff;
+        font-size: .9em;
+        cursor: pointer;
+        border: none;
+        box-shadow: 5px 5px 6px 0px #c6c6c6;
+        z-index: 1;
+        background: linear-gradient($clr-secondary, $clr-primary);
+        position: relative;
+        overflow: hidden;
+        transition: background-color 250ms;
+
+        @include responsive (phone) {
+            width: 60%;
+        }
+
+        @include responsive (tab-port) {
+            width: 50%;
+            padding: 3%;
+        }
+
+        @include responsive (desktop-big) {
+            width: 26%;
+            padding: 2% 5%;
+            font-size: .5em;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: radial-gradient(circle, lighten($clr-primary, 5) 0%, darken($clr-secondary, 10) 100%);
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+        }
+    }
+}
+.valider--bis{
+    margin-top:20%;
+}

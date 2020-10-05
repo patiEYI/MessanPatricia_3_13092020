@@ -1,43 +1,7 @@
 $clr-primary: #9356DC;
 $clr-secondary: #FF79DA;
 $clr-tertiaire: #99E2D0;
-@mixin responsive($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (min-width: 375px) {
-            @content
-        }
-    }
 
-    @if $breakpoint == phone1 {
-        @media only screen and (min-width: 425px) {
-            @content
-        }
-    }
-
-    @if $breakpoint == tab-port {
-        @media only screen and (min-width: 768px) {
-            @content
-        }
-    }
-
-    @if $breakpoint == tab-land {
-        @media only screen and (min-width: 1024px) {
-            @content
-        }
-    }
-
-    @if $breakpoint == desktop-big {
-        @media screen and (min-width: 1440px) {
-            @content
-        }
-    }
-
-    @if $breakpoint == desktop-big-plus {
-        @media screen and (min-width: 2560px) {
-            @content
-        }
-    }
-}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -63,38 +27,6 @@ body {
 
         @include responsive (desktop-big-plus) {
             font-size: 2.2em;
-        }
-
-
-        header {
-            .header {
-                font-weight: bold;
-                text-align: center;
-                font-family: 'Shrikhand', cursive;
-                font-size: 2em;
-            }
-
-            .fa-arrow-left {
-                display: block;
-                position: absolute;
-                top: 1%;
-                left: 5%;
-                color: #625454;
-                font-size: 1.2em;
-                font-weight: 100;
-
-                @include responsive (tab-port) {
-                    left: 18%;
-                }
-
-                @include responsive (tab-land) {
-                    left: 23%;
-                }
-
-                @include responsive (desktop-big) {
-                    left: 28%;
-                }
-            }
         }
         //image en haut de la page
         .restaurant__img {
@@ -129,6 +61,7 @@ body {
             opacity: 0.99;
             margin-top: 54%;
             padding: 1%;
+            padding-bottom: 20%;
 
             @include responsive (tab-land) {
                 border-radius: 60px 60px 0 0;
@@ -138,60 +71,73 @@ body {
                 border-radius: 120px 120px 0 0;
             }
 
-            .menu__icon {
-                display: inline-block;
+            .heading1 {
+                font-family: 'Shrikhand', cursive;
+                margin-bottom: 7%;
+                padding-top: 10%;
+                font-size: 1.5em;
+                padding-left: 3%;
+                display: flex;
 
-                .fa-heart-o {
-                    color: #000;
-                    font-size: 1.1em;
-                    margin-left: 80px;
-                    cursor: pointer;
-                    position: relative;
 
-                    @include responsive (phone) {
-                        margin-left: 180px;
-                    }
 
-                    @include responsive (tab-port) {
-                        margin-left: 280px;
-                    }
 
-                    @include responsive (tab-land) {
-                        margin-left: 350px;
-                    }
+                .menu__icon {
+                    display: inline-block;
+                    margin-left: 23%;
 
-                    @include responsive (desktop-big-plus) {
-                        margin-left: 670px;
-                    }
 
-                    &:hover {
-                        .fa-heart {
-                            opacity: 1;
+
+
+
+                    .fa-heart-o {
+                        font-size: 1.3em;
+                        display: inline-block;
+                        cursor: pointer;
+                        position: relative;
+
+
+
+                        &:hover {
+
+
+                            .fa-heart {
+                                animation: progress-bar 1000ms;
+                            }
                         }
-                    }
 
-                    .fa-heart {
-                        color: #d36bda;
-                        opacity: 0;
-                        position: absolute;
-                        right: 0px;
+                        @include responsive (phone) {
+                        }
+
+                        @include responsive (phone1) {
+                        }
+
+                        @include responsive (tab-port) {
+                        }
+
+                        @include responsive (tab-land) {
+                        }
+
+                        @include responsive (desktop-big-plus) {
+                        }
+
+                        .fa-heart { 
+                            color: $clr-primary;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            bottom: 0%;
+                            transform:scaleY(0);é&&a
+                        }
                     }
                 }
             }
 
 
-            .heading1 {
-                font-family: 'Shrikhand', cursive;
-                margin-bottom: 5%;
-                padding-top: 5%;
-                font-size: 1.5em;
-                padding-left: 3%;
-            }
-
-
             .heading2 {
                 font-size: 1.1em;
-                padding-top: 6%;
                 padding-bottom: 1%;
                 color: dimgray;
                 font-weight: 400;
@@ -215,25 +161,50 @@ body {
 
 
                 .menu__plat--1 {
-                    animation: progress 800ms 250ms both;
+                    animation: progress 1000ms 400ms both;
                 }
 
                 .menu__plat--2 {
-                    animation: progress 800ms 450ms both;
+                    animation: progress 1000ms 600ms both;
                 }
 
                 .menu__plat--3 {
-                    animation: progress 800ms 550ms both;
+                    animation: progress 1000ms 800ms both;
+                }
+
+                .menu__plat--3bis {
+                    animation: progress 1000ms 1000ms both;
                 }
 
                 .menu__plat--4 {
-                    animation: progress 800ms 700ms both;
+                    animation: progress 1000ms 1200ms both;
+                }
+
+                .menu__plat--5 {
+                    animation: progress 1000ms 1400ms both;
+                }
+
+                .menu__plat--6 {
+                    animation: progress 1000ms 1600ms both;
+                }
+
+                .menu__plat--7 {
+                    animation: progress 1000ms 1800ms both;
+                }
+
+                .menu__plat--8 {
+                    animation: progress 1000ms 2000ms both;
+                }
+
+                .menu__plat--9 {
+                    animation: progress 1000ms 2200ms both;
+                    margin-bottom: 12%;
                 }
 
 
 
                 &__plat {
-                    width: 90%;
+                    width: 95%;
                     margin: auto;
                     padding: 3%;
                     background-color: #FFF;
@@ -295,11 +266,11 @@ body {
                                 transform: translateX(-240%);
 
                                 @include responsive (tab-port) {
-                                    transform: translateX(-260%);
+                                    transform: translateX(-310%);
                                 }
 
                                 @include responsive (tab-land) {
-                                    transform: translateX(-290%);
+                                    transform: translateX(-360%);
                                 }
                             }
                         }
@@ -392,71 +363,6 @@ body {
                     }
                 }
             }
-            //button valider
-            .valider {
-                padding-bottom: 20%;
-                padding-top: 10%;
-
-                @include responsive (tab-land) {
-                }
-
-                .valider__btn {
-                    display: block;
-                    text-align: center;
-                    margin: auto;
-                    width: 50%;
-                    padding: 4%;
-                    border-radius: 55px;
-                    color: #fff;
-                    font-size: 1.1em;
-                    cursor: pointer;
-                    border: none;
-                    box-shadow: 5px 5px 6px 0px #c6c6c6;
-                    z-index: 1;
-                    background: linear-gradient(#FF79DA, #9356DC);
-                    position: relative;
-                    overflow: hidden;
-                    transform: scale(1);
-                    transition: transform 400ms,background-color 300ms 150ms ease-in-out;
-
-                    @include responsive (tab-port) {
-                        width: 50%;
-                        padding: 3%;
-                    }
-
-                    &:hover {
-                        transform: scale(1.10);
-                    }
-                }
-            }
-        }
-
-        footer {
-            background-color: #2B2D30;
-            height: 28vh;
-            padding: 5%;
-            font-size: 1.3em;
-
-            .footer__heading {
-                font-family: 'Shrikhand', cursive;
-                color: #E8E9EA;
-                padding-bottom: 20px;
-            }
-
-            .footer__list {
-                color: #E8E9EA;
-                list-style-type: none;
-                font-weight: 500;
-
-                li {
-                    padding-bottom: 3%;
-
-
-                    i {
-                        margin-right: 4%;
-                    }
-                }
-            }
         }
     }
 }
@@ -471,16 +377,15 @@ body {
             opacity: 1;
         }
     }
-
-    @keyframes progress1 {
-        0% {
-            opacity: 1;
-        }
-
-
-        100% {
-            opacity: 0;
-        }
+@keyframes progress-bar {
+    0% {
+        transform: scaleY(0);
     }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+   
 
     
