@@ -437,32 +437,32 @@ header .fa-arrow-left {
     font-size: 0.97em;
   }
 }
-.wrapper main {
+.wrapper #main {
   background-color: #f6f6f6;
   padding-bottom: 20%;
 }
 @media only screen and (min-width: 1440px) {
-  .wrapper main {
+  .wrapper #main {
     padding-bottom: 5%;
   }
 }
 @media screen and (min-width: 2560px) {
-  .wrapper main {
+  .wrapper #main {
     font-size: 1.4em;
   }
 }
-.wrapper main a {
+.wrapper #main a {
   text-decoration: none;
   color: #000;
 }
-.wrapper main h2 {
+.wrapper #main h2 {
   margin-left: 7%;
   font-weight: bold;
   padding-top: 15%;
   margin-bottom: 5%;
 }
 @media only screen and (min-width: 1440px) {
-  .wrapper main h2 {
+  .wrapper #main h2 {
     font-size: 2em;
     margin-left: 3%;
     padding-top: 3%;
@@ -470,20 +470,20 @@ header .fa-arrow-left {
   }
 }
 @media only screen and (min-width: 1440px) {
-  .wrapper main .restaurant1 {
+  .wrapper #main .restaurant1 {
     display: flex;
     justify-content: space-evenly;
   }
 }
-.wrapper main ul {
+.wrapper #main ul {
   list-style-type: none;
 }
 @media only screen and (min-width: 1440px) {
-  .wrapper main ul .restaurant__new--1 {
+  .wrapper #main ul .restaurant__new--1 {
     left: 77%;
   }
 }
-.wrapper main ul .restaurant__new {
+.wrapper #main ul .restaurant__new {
   display: block;
   background-color: #99E2D0;
   padding: 2%;
@@ -497,7 +497,7 @@ header .fa-arrow-left {
   margin-top: 2%;
 }
 @media only screen and (min-width: 768px) {
-  .wrapper main ul .restaurant__new {
+  .wrapper #main ul .restaurant__new {
     right: 9%;
     width: 14%;
     padding: 2%;
@@ -505,20 +505,20 @@ header .fa-arrow-left {
   }
 }
 @media only screen and (min-width: 1440px) {
-  .wrapper main ul .restaurant__new {
+  .wrapper #main ul .restaurant__new {
     height: 5vh;
   }
 }
 @media screen and (min-width: 2560px) {
-  .wrapper main ul .restaurant__new {
+  .wrapper #main ul .restaurant__new {
     height: 4vh;
   }
 }
-.wrapper main ul li {
+.wrapper #main ul li {
   margin-bottom: 25px;
   position: relative;
 }
-.wrapper main ul li img {
+.wrapper #main ul li img {
   display: block;
   width: 90%;
   height: 20vh;
@@ -527,38 +527,38 @@ header .fa-arrow-left {
   border-radius: 10px 10px 0 0;
 }
 @media only screen and (min-width: 375px) {
-  .wrapper main ul li img {
+  .wrapper #main ul li img {
     height: 23vh;
   }
 }
 @media only screen and (min-width: 768px) {
-  .wrapper main ul li img {
+  .wrapper #main ul li img {
     height: 30vh;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .wrapper main ul li img {
+  .wrapper #main ul li img {
     height: 35vh;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .wrapper main ul li img {
+  .wrapper #main ul li img {
     height: 28vh;
   }
 }
 @media screen and (min-width: 2560px) {
-  .wrapper main ul li img {
+  .wrapper #main ul li img {
     height: 24vh;
   }
 }
-.wrapper main ul li iframe {
+.wrapper #main ul li iframe {
   width: 20%;
   height: 20%;
   position: absolute;
   top: 5%;
   left: 10%;
 }
-.wrapper main ul li div {
+.wrapper #main ul li div {
   width: 90%;
   height: 8vh;
   background-color: #FEFFFF;
@@ -568,30 +568,30 @@ header .fa-arrow-left {
   padding: 4% 0 0 3%;
 }
 @media only screen and (min-width: 768px) {
-  .wrapper main ul li div {
+  .wrapper #main ul li div {
     height: 11vh;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .wrapper main ul li div {
+  .wrapper #main ul li div {
     height: 10vh;
   }
 }
 @media screen and (min-width: 2560px) {
-  .wrapper main ul li div {
+  .wrapper #main ul li div {
     height: 8vh;
   }
 }
-.wrapper main ul li p {
+.wrapper #main ul li p {
   font-weight: bold;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 1440px) {
-  .wrapper main ul li .fa-heart--bis {
+  .wrapper #main ul li .fa-heart--bis {
     left: 82%;
   }
 }
-.wrapper main ul li .fa-heart {
+.wrapper #main ul li .fa-heart {
   display: inline-block;
   position: absolute;
   right: 9%;
@@ -601,7 +601,7 @@ header .fa-arrow-left {
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
-  .wrapper main ul li .fa-heart {
+  .wrapper #main ul li .fa-heart {
     right: 10%;
   }
 }
