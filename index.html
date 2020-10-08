@@ -14,8 +14,15 @@
 </head>
 
 <body>
-   <div id="chargement"></div>
+    <!--loading-spinner-->
+    <section class="spinner">
+        <div class="spinner__text">Loading </div>
+        <div class="spinner__section spinner__section--1"> </div>
+        <div class="spinner__section spinner__section--2"> </div>
+        <div class="spinner__section spinner__section--3"> </div>
+    </section>
     <section class="wrapper">
+
         <!--header-->
         <header>
             <h1 class="header">ohmyfood</h1>
@@ -23,14 +30,14 @@
         <!--section1-->
         <section class="main">
 
-            <p class="main__lieu"><i class="fa fa-map-marker-alt fa"></i>Paris, Belleville</p>
+            <p class="main__lieu"><i class="fa fa-map-marker-alt fa " aria-hidden="true"></i>Paris, Belleville</p>
 
             <div class="main__heading">
                 <h2 class="main__heading1">Book the menu you like</h2>
                 <p class="main__heading2">Discover top-of-the-art restaurants we <br />picked for you</p>
                 <div class="valider"><button class="valider__btn">Explore your restaurants</button></div>
             </div>
-           
+
 
 
         </section>
@@ -39,15 +46,13 @@
             <h2>How it works</h2>
             <nav class="nav">
                 <ol>
-                    <li class="nav__link nav__link--change"><div class="nav__link--1">1</div><i class="fas fa-mobile-alt  "></i><p>Choose a restaurant</p> </li>
-                    <li class="nav__link nav__link--change1 "><div  class="nav__link--2">2</div> <i class="fas fa-th-list "></i><p>Create your menu</p>  </li>
-                    <li class="nav__link nav__link--change2"><div  class="nav__link--3">3</div><i class="fas fa-store "></i> <p>Go enjoy it at the restaurant</p> </li>
+                    <li class="nav__link nav__link--change"><div class="nav__link--1">1</div><i class="fas fa-mobile-alt "aria-hidden="true"></i><p>Choose a restaurant</p> </li>
+                    <li class="nav__link nav__link--change1 "><div class="nav__link--2">2</div> <i class="fas fa-th-list " aria-hidden="true"></i><p>Create your menu</p>  </li>
+                    <li class="nav__link nav__link--change2"><div class="nav__link--3">3</div><i class="fas fa-store " aria-hidden="true"></i> <p>Go enjoy it at the restaurant</p> </li>
                 </ol>
 
             </nav>
         </section>
-
-
         <!--section3-->
         <main>
             <h2>Restaurants</h2>
@@ -82,7 +87,7 @@
 
                     <a href="francaise.html"><img src="img/francaise.jpg" alt="photo restaurant" /></a>
                     <div>
-                        <i class="fas fa-heart fas fa-heart--bis" aria-hidden="true" ></i>
+                        <i class="fas fa-heart fas fa-heart--bis" aria-hidden="true"></i>
                         <a href="francaise.html"><p>Bastille</p></a>
                         <small>New York</small>
 
@@ -109,7 +114,7 @@
                 <li><i class="fa fa-handshake-o fa"> </i>Become a patner</li>
 
                 <li>legal</li>
-                <li class="footer__contact"><a href="patriciasparow@gmail.com">contact</a></li>
+                <li class="footer__contact"><a href="mailto:patriciasparow@gmail.com">contact</a></li>
             </ul>
         </footer>
     </section>

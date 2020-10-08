@@ -13,6 +13,7 @@ $clr-tertiaire: #99E2D0;
 
 .wrapper {
 	margin: 0 auto;
+	animation: display 0ms 3s both;
 
 	@include responsive (tab-port) {
 		width: 70%;
@@ -550,13 +551,13 @@ $clr-tertiaire: #99E2D0;
 	
 	}
 }
-@keyframes loading{
+@keyframes display {
 	0% {
-		transform: rotate(0deg);
+		transform: translateX(-9999px);
 	}
-
 
 	100% {
-		transform: rotate(360deg);
+		transform: translateX(0);
 	}
+	
 }

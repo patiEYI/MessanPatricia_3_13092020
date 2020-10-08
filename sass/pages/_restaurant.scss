@@ -7,6 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
 
 
+
     .container {
         box-sizing: border-box;
 
@@ -78,294 +79,289 @@ body {
                 font-size: 1.5em;
                 padding-left: 3%;
                 display: flex;
-
-
+                position: relative;
 
 
                 .menu__icon {
-                    display: inline-block;
-                    margin-left: 23%;
-
-
-
-
-
-                    .fa-heart-o {
-                        font-size: 1.3em;
-                        display: inline-block;
-                        cursor: pointer;
-                        position: relative;
-
-
-
-                        &:hover {
-
-
-                            .fa-heart {
-                                animation: progress-bar 1000ms;
-                            }
-                        }
-
-                        @include responsive (phone) {
-                        }
-
-                        @include responsive (phone1) {
-                        }
-
-                        @include responsive (tab-port) {
-                        }
-
-                        @include responsive (tab-land) {
-                        }
-
-                        @include responsive (desktop-big-plus) {
-                        }
-
-                        .fa-heart { 
-                            color: $clr-primary;
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            top: 0;
-                            left: 0;
-                            bottom: 0%;
-                            transform:scaleY(0);é&&a
-                        }
-                    }
-                }
-            }
-
-
-            .heading2 {
-                font-size: 1.1em;
-                padding-bottom: 1%;
-                color: dimgray;
-                font-weight: 400;
-                padding-left: 4%;
-
-                @include responsive (tab-port) {
-                    font-size: 1.3em;
-                }
-            }
-
-            .divider {
-                display: block;
-                width: 10%;
-                border: solid 1px $clr-tertiaire;
-                margin-left: 4%;
-            }
-
-            .menu {
-                list-style-type: none;
-                padding-top: 5%;
-
-
-                .menu__plat--1 {
-                    animation: progress 1000ms 400ms both;
-                }
-
-                .menu__plat--2 {
-                    animation: progress 1000ms 600ms both;
-                }
-
-                .menu__plat--3 {
-                    animation: progress 1000ms 800ms both;
-                }
-
-                .menu__plat--3bis {
-                    animation: progress 1000ms 1000ms both;
-                }
-
-                .menu__plat--4 {
-                    animation: progress 1000ms 1200ms both;
-                }
-
-                .menu__plat--5 {
-                    animation: progress 1000ms 1400ms both;
-                }
-
-                .menu__plat--6 {
-                    animation: progress 1000ms 1600ms both;
-                }
-
-                .menu__plat--7 {
-                    animation: progress 1000ms 1800ms both;
-                }
-
-                .menu__plat--8 {
-                    animation: progress 1000ms 2000ms both;
-                }
-
-                .menu__plat--9 {
-                    animation: progress 1000ms 2200ms both;
-                    margin-bottom: 12%;
-                }
-
-
-
-                &__plat {
-                    width: 95%;
-                    margin: auto;
-                    padding: 3%;
-                    background-color: #FFF;
-                    margin-bottom: 4%;
-                    z-index: 1;
-                    border-radius: 15px;
-                    box-shadow: 5px 5px 6px 0px #c6c6c6;
+                    width: 30px;
+                    height: 30px;
+                    display: block;
                     position: relative;
-                    cursor: pointer;
-                    overflow: hidden;
+                    margin-left: 23%;
+                    
 
-                    @include responsive (desktop-big-plus) {
-                        border-radius: 45px;
+
+
+                    .cacher {
+                        display: block;
+                        background-image: url("img/img.coeur.jpg");
+
+
+                        .fa-heart-o {
+                            display: block;
+                            font-size: 1.3em;
+                            width: 32px;
+                            height: 30px;
+                            z-index: 1;
+                        }
                     }
 
 
                     &:hover {
-                        background-color: #f5edff;
-
-                        & .menu__animation {
-                            transform: translateX(-90%);
 
 
-                            .fa-check {
-                                transform: rotate(360deg);
-                            }
-                        }
-
-
-
-                        & .menu__name {
-                            .menu__hidden1 {
-                                visibility: hidden;
-                                display: inline-block;
-                                z-index: -1;
-
-                                &::before {
-                                    opacity: 1;
-                                    visibility: visible;
-                                    z-index: 1;
-                                }
-                            }
-                        }
-
-                        & .menu__plus {
-                            .menu__hidden {
-                                visibility: hidden;
-                                display: inline-block;
-                                z-index: -1;
-
-                                &::before {
-                                    opacity: 1;
-                                    visibility: visible;
-                                    z-index: 1;
-                                }
-                            }
-
-                            & .menu__price {
-                                transform: translateX(-240%);
-
-                                @include responsive (tab-port) {
-                                    transform: translateX(-310%);
-                                }
-
-                                @include responsive (tab-land) {
-                                    transform: translateX(-360%);
-                                }
-                            }
+                        .jauge {
+                            height: 100%;
+                            z-index: -1;
                         }
                     }
 
-                    .menu__animation {
-                        opacity: 1;
+                    .jauge {
                         position: absolute;
-                        display: flex;
-                        top: 0px;
-                        bottom: 0px;
-                        right: -20%;
-                        background-color: $clr-tertiaire;
-                        width: 20%;
-                        height: auto;
-                        z-index: 1;
-                        border-radius: 0 15px 15px 0;
-                        transform-origin: left;
-                        transform: translateX(0);
-                        transition: transform 300ms 50ms ease-in-out;
+                        font-size: 1.3em;
+                        cursor: pointer;
+                        background-image: linear-gradient($clr-primary, $clr-secondary);
+                        transition: all 0.3s linear 0s;
+                        width: 100%;
+                        height: 0%;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
 
-                        @include responsive (desktop-big-plus) {
-                            border-radius: 0 45px 45px 0;
-                        }
+
+        .heading2 {
+            font-size: 1.1em;
+            padding-bottom: 1%;
+            color: dimgray;
+            font-weight: 400;
+            padding-left: 4%;
+
+            @include responsive (tab-port) {
+                font-size: 1.3em;
+            }
+        }
+
+        .divider {
+            display: block;
+            width: 10%;
+            border: solid 1px $clr-tertiaire;
+            margin-left: 4%;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding-top: 5%;
+
+
+            .menu__plat--1 {
+                animation: progress 1000ms 400ms both;
+            }
+
+            .menu__plat--2 {
+                animation: progress 1000ms 600ms both;
+            }
+
+            .menu__plat--3 {
+                animation: progress 1000ms 800ms both;
+            }
+
+            .menu__plat--3bis {
+                animation: progress 1000ms 1000ms both;
+            }
+
+            .menu__plat--4 {
+                animation: progress 1000ms 1200ms both;
+            }
+
+            .menu__plat--5 {
+                animation: progress 1000ms 1400ms both;
+            }
+
+            .menu__plat--6 {
+                animation: progress 1000ms 1600ms both;
+            }
+
+            .menu__plat--7 {
+                animation: progress 1000ms 1800ms both;
+            }
+
+            .menu__plat--8 {
+                animation: progress 1000ms 2000ms both;
+            }
+
+            .menu__plat--9 {
+                animation: progress 1000ms 2200ms both;
+                margin-bottom: 12%;
+            }
+
+
+
+            &__plat {
+                width: 95%;
+                margin: auto;
+                padding: 3%;
+                background-color: #FFF;
+                margin-bottom: 4%;
+                z-index: 1;
+                border-radius: 15px;
+                box-shadow: 5px 5px 6px 0px #c6c6c6;
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+
+                @include responsive (desktop-big-plus) {
+                    border-radius: 45px;
+                }
+
+
+                &:hover {
+                    background-color: #f5edff;
+
+                    & .menu__animation {
+                        transform: translateX(-90%);
+
 
                         .fa-check {
-                            margin: auto;
-                            color: $clr-tertiaire;
-                            border-radius: 50%;
-                            background-color: #fff;
-                            padding: 2% 2%;
-                            opacity: 1;
-                            transform: rotate(0);
-                            transition: transform 300ms 100ms cubic-bezier(1,0,.77,.44);
+                            transform: rotate(360deg);
                         }
                     }
 
 
 
-                    .menu__name {
-                        font-weight: 500;
-                        padding-bottom: 6px;
-                        font-size: 1.2em;
-
+                    & .menu__name {
                         .menu__hidden1 {
-                            position: relative;
-                            transform-origin: left;
-                            opacity: 1;
-                            z-index: 1;
+                            visibility: hidden;
+                            display: inline-block;
+                            z-index: -1;
 
                             &::before {
-                                position: absolute;
-                                content: "...";
-                                opacity: 0;
-                                z-index: -1;
+                                opacity: 1;
+                                visibility: visible;
+                                z-index: 1;
                             }
                         }
                     }
 
-                    .menu__plus {
-                        color: #050505;
-                        font-weight: 400;
-                        font-size: .90em;
-                        display: inline-block;
-
+                    & .menu__plus {
                         .menu__hidden {
-                            position: relative;
-                            transform-origin: left;
-                            opacity: 1;
-                            z-index: 1;
+                            visibility: hidden;
+                            display: inline-block;
+                            z-index: -1;
 
                             &::before {
-                                position: absolute;
-                                content: "...";
-                                opacity: 0;
-                                z-index: -1;
+                                opacity: 1;
+                                visibility: visible;
+                                z-index: 1;
                             }
                         }
 
-                        .menu__price {
-                            position: absolute;
-                            display: inline-block;
-                            right: 3%;
-                            font-size: 1.1em;
-                            margin-left: 5%;
-                            font-weight: bold;
-                            transform: translateX(0);
-                            transition: transform 300ms 50ms ease-in-out;
+                        & .menu__price {
+                            transform: translateX(-240%);
+
+                            @include responsive (tab-port) {
+                                transform: translateX(-310%);
+                            }
+
+                            @include responsive (tab-land) {
+                                transform: translateX(-360%);
+                            }
                         }
+                    }
+                }
+
+                .menu__animation {
+                    opacity: 1;
+                    position: absolute;
+                    display: flex;
+                    top: 0px;
+                    bottom: 0px;
+                    right: -20%;
+                    background-color: $clr-tertiaire;
+                    width: 20%;
+                    height: auto;
+                    z-index: 1;
+                    border-radius: 0 15px 15px 0;
+                    transform-origin: left;
+                    transform: translateX(0);
+                    transition: transform 300ms 50ms ease-in-out;
+
+                    @include responsive (desktop-big-plus) {
+                        border-radius: 0 45px 45px 0;
+                    }
+
+                    .fa-check {
+                        margin: auto;
+                        color: $clr-tertiaire;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        padding: 2% 2%;
+                        opacity: 1;
+                        transform: rotate(0);
+                        transition: transform 300ms 100ms cubic-bezier(1,0,.77,.44);
+                    }
+                }
+
+
+
+                .menu__name {
+                    font-weight: 500;
+                    padding-bottom: 6px;
+                    font-size: 1.2em;
+
+                    .menu__hidden1 {
+                        position: relative;
+                        transform-origin: left;
+                        opacity: 1;
+                        z-index: 1;
+
+                        &::before {
+                            position: absolute;
+                            content: "...";
+                            opacity: 0;
+                            z-index: -1;
+                        }
+                    }
+                }
+
+                .menu__plus {
+                    color: #050505;
+                    font-weight: 400;
+                    font-size: .90em;
+                    display: inline-block;
+
+                    .menu__hidden {
+                        position: relative;
+                        transform-origin: left;
+                        opacity: 1;
+                        z-index: 1;
+
+                        &::before {
+                            position: absolute;
+                            content: "...";
+                            opacity: 0;
+                            z-index: -1;
+                        }
+                    }
+
+                    .menu__price {
+                        position: absolute;
+                        display: inline-block;
+                        right: 3%;
+                        font-size: 1.1em;
+                        margin-left: 5%;
+                        font-weight: bold;
+                        transform: translateX(0);
+                        transition: transform 300ms 50ms ease-in-out;
                     }
                 }
             }
         }
     }
 }
+
 
     @keyframes progress {
         0% {
@@ -386,6 +382,8 @@ body {
         transform: scaleY(1);
     }
 }
-   
+
+
+  
 
     
