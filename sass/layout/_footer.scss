@@ -5,38 +5,38 @@ footer {
 
 
     @include responsive (tab-port) {
-        height: 33vh;
+        height: auto;
+        padding: 2%;
     }
 
     @include responsive (desktop-big) {
         font-size: 1.3em;
-        padding: 2%;
+       
     }
 
     @include responsive (desktop-big-plus) {
         font-size: 1.6em;
-        height: 28vh;
     }
 
 
     .footer__heading {
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-family: 'Shrikhand', cursive;
         color: #E8E9EA;
         padding-bottom: 20px;
     }
 
     .footer__list {
-        font-size: 1.2em;
         color: #E8E9EA;
         list-style-type: none;
         font-weight: 500;
 
         li {
             padding-bottom: 1%;
-            a{
-                color:#fff;
-                text-decoration:none;
+
+            a {
+                color: #fff;
+                text-decoration: none;
             }
 
             @include responsive (desktop-big) {
