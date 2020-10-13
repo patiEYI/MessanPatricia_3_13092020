@@ -42,7 +42,7 @@ body {
 	}
 
 	@include responsive (phone1) {
-		margin: 0 auto;
+		
 	}
 
 	@include responsive (tab-port) {

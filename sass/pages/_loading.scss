@@ -1,5 +1,6 @@
 
 * {
+	
 	box-sizing: border-box;
 }
 .spinner {
@@ -8,16 +9,28 @@
 	align-items: center;
 	width: 200px;
 	height: 200px;
-    margin-top:60vh;
-	transform:translateY(100%);
+	margin-top: 60vh;
+	-webkit-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
 	margin: auto;
 	display: flex;
-	animation: hidden 0ms 3s both ;
+	-webkit-animation: hidden 0ms 3s both;
+	-o-animation: hidden 0ms 3s both;
+	-moz-animation: hidden 0ms 3s both;
+	-ms-zoom-animation: inherit;
+	animation: hidden 0ms 3s both;
+
 	&__text {
 		font-size: 2em;
 		font-weight: bold;
+		-o-animation: loading-opacity 3s ease-in-out infinite;
+		-webkit-animation: loading-opacity 3s ease-in-out infinite;
+		-moz-animation: loading-opacity 3s ease-in-out infinite;
+		-ms-zoom-animation: inherit;
 		animation: loading-opacity 3s ease-in-out infinite;
-	
 	}
 
 	&__section {
@@ -26,22 +39,33 @@
 		width: 100%;
 		height: 100%;
 		border: 15px solid transparent;
-		
+		-o-animation: display1 0ms 3900ms both;
+		-webkit-animation: display1 0ms 3900ms both;
+		-moz-animation: display1 0ms 3900ms both;
 		animation: display1 0ms 3900ms both;
 	}
 
 	&__section--1 {
 		border-top: 15px solid $clr-primary;
+		-o-animation: spin 1s ease infinite;
+		-moz-animation: spin 1s ease infinite;
+		-webkit-animation: spin 1s ease infinite;
 		animation: spin 1s ease infinite;
 	}
 
 	&__section--2 {
 		border-top: 15px solid $clr-secondary;
+		-o-animation: spin 2s ease-in infinite;
+		-moz-animation: spin 2s ease-in infinite;
+		-webkit-animation: spin 2s ease-in infinite;
 		animation: spin 2s ease-in infinite;
 	}
 
 	&__section--3 {
 		border-top: 15px solid $clr-tertiaire;
+		-o-animation: spin 1.5s ease-out infinite;
+		-moz-animation: spin 1.5s ease-out infinite;
+		-webkit-animation: spin 1.5s ease-out infinite;
 		animation: spin 1.5s ease-out infinite;
 	}
 }

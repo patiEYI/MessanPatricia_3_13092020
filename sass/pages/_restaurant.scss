@@ -76,56 +76,66 @@ body {
                 font-family: 'Shrikhand', cursive;
                 margin-bottom: 7%;
                 padding-top: 10%;
-                font-size: 1.5em;
+                font-size: 1.6em;
                 padding-left: 3%;
+            }
+
+            .menu__entete {
                 display: flex;
-                position: relative;
 
 
-                .menu__icon {
-                    width: 30px;
-                    height: 30px;
-                    display: block;
+
+                p {
                     position: relative;
-                    margin-left: 23%;
-                    
+                    width: 35px;
+                    height: 35px;
+                    margin-top: -19%;
+                    margin-left: 82%;
+                    overflow: hidden;
 
-
-
-                    .cacher {
-                        display: block;
-                        background-image: url("img/img.coeur.jpg");
-
-
-                        .fa-heart-o {
-                            display: block;
-                            font-size: 1.3em;
-                            width: 32px;
-                            height: 30px;
-                            z-index: 1;
-                        }
+                    @include responsive (phone) {
+                        margin-top: -17%;
                     }
 
+                    @include responsive (phone1) {
+                        margin-top: -15%;
+                    }
+
+                    @include responsive (tab-port) {
+                        margin-top: -13%;
+                        margin-left: 86%;
+                    }
+
+                    @include responsive (desktop-big) {
+                        margin-left: 90%;
+                        margin-top: -12%;
+                    }
 
                     &:hover {
-
-
-                        .jauge {
-                            height: 100%;
-                            z-index: -1;
+                        #coeur-rempli {
+                            animation: slide 1s linear both;
+                            display: inherit;
+                        }
+                        //les bordures disparaissent
+                        #coeur-vide {
+                            animation: slide1 10ms 1s both;
                         }
                     }
 
-                    .jauge {
+                    #coeur-rempli {
+                        z-index: 1;
+                        transform: translateY(9%);
+                        clip-path: ellipse(10px 5px at 80% 90%);
+                    }
+
+                    #coeur-vide {
                         position: absolute;
-                        font-size: 1.3em;
-                        cursor: pointer;
-                        background-image: linear-gradient($clr-primary, $clr-secondary);
-                        transition: all 0.3s linear 0s;
-                        width: 100%;
-                        height: 0%;
-                        left: 0;
-                        bottom: 0;
+                        right: 5%;
+                        top: 0%;
+                        left: 0%;
+                        bottom: 2%;
+                        z-index: 1;
+                        opacity: 1;
                     }
                 }
             }
@@ -373,14 +383,49 @@ body {
             opacity: 1;
         }
     }
-@keyframes progress-bar {
+@keyframes slide1 {
     0% {
-        transform: scaleY(0);
+        opacity: 1;
     }
 
+
     100% {
-        transform: scaleY(1);
+        opacity: 0;
     }
+}
+@keyframes slide {
+    0% {
+        opacity: 1;
+        clip-path: ellipse(10px 5px at 60% 60%);
+    }
+
+    14% {
+        clip-path: ellipse(13px 10px at 60% 60%);
+    }
+    35%{
+        clip-path: ellipse(15px 14px at 60% 60%);
+    }
+    46%  {
+        clip-path: ellipse(18px 16px at 60% 60%);
+    }
+    66% {
+        clip-path: ellipse(22px 17px at 60% 60%);
+    }
+    76% {
+        clip-path: ellipse(26px 20px at 60% 60%);
+    }
+    88% {
+        clip-path: ellipse(30px 17px at 60% 60%);
+    }
+    95% {
+        clip-path: ellipse();
+    }
+    100% {
+        clip-path: ellipse(100% 100%);
+        width:40px;
+        height:40px;
+    }
+    
 }
 
 

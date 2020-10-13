@@ -2,16 +2,15 @@ footer {
     background-color: #2B2D30;
     height: 27vh;
     padding: 5%;
+    height: auto;
 
 
     @include responsive (tab-port) {
-        height: auto;
         padding: 2%;
     }
 
     @include responsive (desktop-big) {
         font-size: 1.3em;
-       
     }
 
     @include responsive (desktop-big-plus) {
