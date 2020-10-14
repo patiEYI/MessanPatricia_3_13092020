@@ -650,7 +650,7 @@ $clr-tertiaire: #99E2D0;
 	}
 
 	95% {
-		clip-path: ellipse();
+		clip-path: ellipse(32px 18px at 60% 60%);
 	}
 
 	100% {
