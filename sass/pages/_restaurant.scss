@@ -289,9 +289,6 @@ body {
                 .menu__animation {
                     opacity: 1;
                     position: absolute;
-                    display:-moz-box;
-                    display:-webkit-box;
-                    display:-ms-flexbox;
                     display: flex;
                     top: 0px;
                     bottom: 0px;
@@ -425,7 +422,7 @@ body {
         clip-path: ellipse(30px 17px at 60% 60%);
     }
     95% {
-        clip-path: ellipse();
+        clip-path: ellipse(32px 18px at 60% 60%);
     }
     100% {
         clip-path: ellipse(100% 100%);
