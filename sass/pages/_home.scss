@@ -13,9 +13,6 @@ $clr-tertiaire: #99E2D0;
 
 .wrapper {
 	margin: 0 auto;
-	-o-animation: display 0ms 3s both;
-	-webkit-animation: display 0ms 3s both;
-	-moz-animation: display 0ms 3s both;
 	animation: display 0ms 3s both;
 
 	@include responsive (tab-port) {
@@ -34,6 +31,15 @@ $clr-tertiaire: #99E2D0;
 	@include responsive (desktop-big-plus) {
 		width: 60%;
 		font-size: 1.5em;
+	}
+
+	a {
+		//def
+		#hidden {
+			z-index: -99999;
+			position: fixed;
+			transform: translate(-999999999999999999999px)
+		}
 	}
 	//main
 	.main {
@@ -360,6 +366,8 @@ $clr-tertiaire: #99E2D0;
 			color: #000;
 		}
 
+
+
 		h2 {
 			margin-left: 7%;
 			font-weight: bold;
@@ -457,51 +465,84 @@ $clr-tertiaire: #99E2D0;
 					}
 				}
 
+
+
 				.restaurant__coeur {
 					position: absolute;
 					width: 35px;
 					height: 35px;
 					margin-top: 4%;
 					margin-left: 79%;
-					overflow: hidden;
+
+
 
 					@include responsive (tab-port) {
 						margin-left: 85%;
 						margin-top: 6%;
 					}
 
-					&:hover {
-						#coeur-r {
-							-moz-animation: slid 1s linear both;
-							-webkit-animation: slid 1s linear both;
-							-o-animation: slid 1s linear both;
-							animation: slid 1s linear both;
-							display: inherit;
-						}
+					#coeur-r__1 {
+						position: absolute;
+						margin-left: -80%;
+						margin-top: -2%;
+						clip-path: ellipse(10px 0px at 80% 90%);
+					}
 
-						#coeur-v {
-							-moz-animation: slid1 1s linear both;
-							-webkit-animation: slid1 1s linear both;
-							-o-animation: slid1 1s linear both;
+					#coeur-r__2 {
+						position: absolute;
+						margin-left: -80%;
+						margin-top: -2%;
+						clip-path: ellipse(10px 0px at 80% 90%);
+					}
+
+					#coeur-r__3 {
+						position: absolute;
+						margin-left: -80%;
+						margin-top: -2%;
+						clip-path: ellipse(10px 0px at 80% 90%);
+					}
+
+					#coeur-r__4 {
+						position: absolute;
+						margin-left: -80%;
+						margin-top: -2%;
+						clip-path: ellipse(10px 0px at 80% 90%);
+					}
+
+					&:hover {
+
+
+						#coeur-v__1 {
 							animation: slid1 10ms 1s both;
 						}
-					}
 
-					#coeur-r {
-						position: absolute;
-						top: 0%;
-						left: 0%;
-						z-index: 1;
-						-webkit-transform: translateY(11%);
-						-moz-transform: translateY(11%);
-						-o-transform: translateY(11%);
-						-ms-transform: translateY(11%);
-						transform: translateY(11%);
-						clip-path: ellipse(10px 5px at 80% 90%);
-					}
+						#coeur-r__1 {
+							animation: slid 1s linear both;
+						}
 
-					#coeur-v {
-						opacity: 1;
+						#coeur-v__2 {
+							animation: slid1 10ms 1s both;
+						}
+
+						#coeur-r__2 {
+							animation: slid 1s linear both;
+						}
+
+						#coeur-v__3 {
+							animation: slid1 10ms 1s both;
+						}
+
+						#coeur-r__3 {
+							animation: slid 1s linear both;
+						}
+
+						#coeur-v__4 {
+							animation: slid1 10ms 1s both;
+						}
+
+						#coeur-r__4 {
+							animation: slid 1s linear both;
+						}
 					}
 				}
 

@@ -276,7 +276,11 @@ body {
                             }
 
                             @include responsive (tab-land) {
-                                transform: translateX(-360%);
+                                transform: translateX(-400%);
+                            }
+
+                            @include responsive (desktop-big) {
+                                transform: translateX(-410%);
                             }
                         }
                     }
@@ -285,6 +289,9 @@ body {
                 .menu__animation {
                     opacity: 1;
                     position: absolute;
+                    display:-moz-box;
+                    display:-webkit-box;
+                    display:-ms-flexbox;
                     display: flex;
                     top: 0px;
                     bottom: 0px;
