@@ -210,14 +210,10 @@ $clr-tertiaire: #99E2D0;
 					list-style-type: none;
 					width: 80%;
 					padding: 5%;
-					-moz-border-radius: 20px;
-					-webkit-border-radius: 20px;
 					border-radius: 20px;
 					font-size: 1em;
 					margin: 5% auto 6% auto;
 					background-color: #f6f6f6;
-					-webkit-box-shadow: 5px 5px 6px 0px #c6c6c6;
-					-moz-box-shadow: 5px 5px 6px 0px #c6c6c6;
 					box-shadow: 5px 5px 6px 0px #c6c6c6;
 					cursor: pointer;
 
@@ -437,8 +433,6 @@ $clr-tertiaire: #99E2D0;
 					margin-left: auto;
 					margin-right: auto;
 					border-radius: 10px 10px 0 0;
-					-moz-box-shadow: 5px 5px 6px 0px #c6c6c6;
-					-webkit-box-shadow: 5px 5px 6px 0px #c6c6c6;
 					box-shadow: 5px 5px 6px 0px #c6c6c6;
 
 					@include responsive (phone) {
