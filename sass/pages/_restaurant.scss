@@ -32,7 +32,7 @@ body {
         //image en haut de la page
         .restaurant__img {
             position: absolute;
-            height: 540vh;
+            
 
             @include responsive (tab-port) {
                 width: 70%;
@@ -167,43 +167,43 @@ body {
 
 
             .menu__plat--1 {
-                animation: progress 1000ms 400ms both;
+                animation: progress 1000ms 300ms both;
             }
 
             .menu__plat--2 {
-                animation: progress 1000ms 600ms both;
-            }
-
-            .menu__plat--3 {
                 animation: progress 1000ms 800ms both;
             }
 
+            .menu__plat--3 {
+                animation: progress 1000ms 1300ms both;
+            }
+
             .menu__plat--3bis {
-                animation: progress 1000ms 1000ms both;
+                animation: progress 1000ms 1700ms both;
             }
 
             .menu__plat--4 {
-                animation: progress 1000ms 1200ms both;
+                animation: progress 1000ms 2100ms both;
             }
 
             .menu__plat--5 {
-                animation: progress 1000ms 1400ms both;
+                animation: progress 1000ms 2500ms both;
             }
 
             .menu__plat--6 {
-                animation: progress 1000ms 1600ms both;
+                animation: progress 1000ms 2900ms both;
             }
 
             .menu__plat--7 {
-                animation: progress 1000ms 1800ms both;
+                animation: progress 1000ms 3300ms both;
             }
 
             .menu__plat--8 {
-                animation: progress 1000ms 2000ms both;
+                animation: progress 1000ms 3700ms both;
             }
 
             .menu__plat--9 {
-                animation: progress 1000ms 2200ms both;
+                animation: progress 1000ms 4100ms both;
                 margin-bottom: 12%;
             }
 
