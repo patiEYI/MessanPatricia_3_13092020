@@ -32,7 +32,7 @@ body {
         //image en haut de la page
         .restaurant__img {
             position: absolute;
-            
+
 
             @include responsive (tab-port) {
                 width: 70%;
@@ -267,7 +267,7 @@ body {
                                 z-index: 1;
                             }
                         }
-                        }
+
                         & .menu__price {
                             transform: translateX(-240%);
 
@@ -278,7 +278,7 @@ body {
                             @include responsive (tab-land) {
                                 transform: translateX(-400%);
                             }
-                            
+
                             @include responsive (desktop-big) {
                                 transform: translateX(-410%);
                             }
@@ -371,7 +371,7 @@ body {
                         transition: transform 300ms 50ms ease-in-out;
                     }
                 }
-            
+            }
         }
     }
 }
